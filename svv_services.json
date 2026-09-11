@@ -1,0 +1,3300 @@
+{
+  "currentVersion" : 12, 
+  "services" : [
+    {
+      "name" : "_Alle_bilder_Harstad", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/_Alle_bilder_Harstad/FeatureServer"
+    }, 
+    {
+      "name" : "_fveg_active_cl", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/_fveg_active_cl/FeatureServer"
+    }, 
+    {
+      "name" : "00_Gjennomforingsplan_offentlig_prosjektert_2023_Tab_view", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/00_Gjennomforingsplan_offentlig_prosjektert_2023_Tab_view/FeatureServer"
+    }, 
+    {
+      "name" : "00_Gjennomforingsplan_offentlig_prosjektert_2023_Tabell_view", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/00_Gjennomforingsplan_offentlig_prosjektert_2023_Tabell_view/FeatureServer"
+    }, 
+    {
+      "name" : "00_Gjennomforingsplan_offentlig_prosjektert_2023_view", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/00_Gjennomforingsplan_offentlig_prosjektert_2023_view/FeatureServer"
+    }, 
+    {
+      "name" : "132030102_E134_Dagslett_E18_prosjektrom", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/132030102_E134_Dagslett_E18_prosjektrom/FeatureServer"
+    }, 
+    {
+      "name" : "20230508_100150", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/20230508_100150/FeatureServer"
+    }, 
+    {
+      "name" : "32_sykkeltilbud_Viken_fylke", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/32_sykkeltilbud_Viken_fylke/FeatureServer"
+    }, 
+    {
+      "name" : "40_StengeplanRugtvedtKjorholt_WFL1", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/40_StengeplanRugtvedtKjorholt_WFL1/FeatureServer"
+    }, 
+    {
+      "name" : "503375_planens_avgrensning", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/503375_planens_avgrensning/FeatureServer"
+    }, 
+    {
+      "name" : "Alle_bilder_BjørumSkaret", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Alle_bilder_BjørumSkaret/FeatureServer"
+    }, 
+    {
+      "name" : "Alle_typer_rasteplass_020919", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Alle_typer_rasteplass_020919/FeatureServer"
+    }, 
+    {
+      "name" : "Allebilder_GSV_Osloveien", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Allebilder_GSV_Osloveien/FeatureServer"
+    }, 
+    {
+      "name" : "Allebilder_Rv_41_Timenes_Kjevik", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Allebilder_Rv_41_Timenes_Kjevik/FeatureServer"
+    }, 
+    {
+      "name" : "AlleVipserBjørumSkaret_f9d49", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/AlleVipserBjørumSkaret_f9d49/FeatureServer"
+    }, 
+    {
+      "name" : "Alternativ_1D_WFL1", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Alternativ_1D_WFL1/FeatureServer"
+    }, 
+    {
+      "name" : "Alternativ1", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Alternativ1/FeatureServer"
+    }, 
+    {
+      "name" : "Alternativ1_revidert_WFL1", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Alternativ1_revidert_WFL1/FeatureServer"
+    }, 
+    {
+      "name" : "Alternativ2", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Alternativ2/FeatureServer"
+    }, 
+    {
+      "name" : "Alternativ3", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Alternativ3/FeatureServer"
+    }, 
+    {
+      "name" : "Analyse_fortausobjekt_ikkeERFVegsystem_vedERF", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Analyse_fortausobjekt_ikkeERFVegsystem_vedERF/FeatureServer"
+    }, 
+    {
+      "name" : "Analyseområde", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Analyseområde/FeatureServer"
+    }, 
+    {
+      "name" : "B11078_E10_Haalogalandsvegen_Arealformål_Bestemmelser_OPS_clip", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/B11078_E10_Haalogalandsvegen_Arealformål_Bestemmelser_OPS_clip/FeatureServer"
+    }, 
+    {
+      "name" : "B11670_E10_Haalogalandsveien_Rigg_Anlegg_deponier", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/B11670_E10_Haalogalandsveien_Rigg_Anlegg_deponier/FeatureServer"
+    }, 
+    {
+      "name" : "B11670_E10_Haalogalandsveien_Senterlinje", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/B11670_E10_Haalogalandsveien_Senterlinje/FeatureServer"
+    }, 
+    {
+      "name" : "B11670_E10_Haalogalandsveien_vannflate", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/B11670_E10_Haalogalandsveien_vannflate/FeatureServer"
+    }, 
+    {
+      "name" : "B11879_E39_Bradbenken_Glass_Knag_Byggegrense", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/B11879_E39_Bradbenken_Glass_Knag_Byggegrense/FeatureServer"
+    }, 
+    {
+      "name" : "B11988_Allebilder_E134_Rodal_Seljestad", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/B11988_Allebilder_E134_Rodal_Seljestad/FeatureServer"
+    }, 
+    {
+      "name" : "B12063_AlleBilder_E6Helgeland_Svenningelv_Lien", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/B12063_AlleBilder_E6Helgeland_Svenningelv_Lien/FeatureServer"
+    }, 
+    {
+      "name" : "B12105_OPS_Sotrasambandet_allebilder", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/B12105_OPS_Sotrasambandet_allebilder/FeatureServer"
+    }, 
+    {
+      "name" : "B12164R01_Medvirkning_E8_Storskreda_MIME", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/B12164R01_Medvirkning_E8_Storskreda_MIME/FeatureServer"
+    }, 
+    {
+      "name" : "B12164R01_Medvirkning_E8_Storskreda_Publikumslag", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/B12164R01_Medvirkning_E8_Storskreda_Publikumslag/FeatureServer"
+    }, 
+    {
+      "name" : "B12166_E134_Dagslett_E18_RegPlan", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/B12166_E134_Dagslett_E18_RegPlan/FeatureServer"
+    }, 
+    {
+      "name" : "B12166_Medvirkning_E134_Dagslett_E18_Publikum_visning", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/B12166_Medvirkning_E134_Dagslett_E18_Publikum_visning/FeatureServer"
+    }, 
+    {
+      "name" : "Bane_Fauske_Narvik", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Bane_Fauske_Narvik/FeatureServer"
+    }, 
+    {
+      "name" : "banenor_jun23", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/banenor_jun23/FeatureServer"
+    }, 
+    {
+      "name" : "Banenor_mai23", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Banenor_mai23/FeatureServer"
+    }, 
+    {
+      "name" : "buffersoner_veg_og_bane", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/buffersoner_veg_og_bane/FeatureServer"
+    }, 
+    {
+      "name" : "Bygninger_korrigert_busskur", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Bygninger_korrigert_busskur/FeatureServer"
+    }, 
+    {
+      "name" : "BygningerMedTekstur", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/BygningerMedTekstur/FeatureServer"
+    }, 
+    {
+      "name" : "Bypakke_Grenland_GS_veger_forsterket_vinterdrift", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Bypakke_Grenland_GS_veger_forsterket_vinterdrift/FeatureServer"
+    }, 
+    {
+      "name" : "C_DK9502_Salten_2025_2030_V2", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/C_DK9502_Salten_2025_2030_V2/FeatureServer"
+    }, 
+    {
+      "name" : "C10299r_Rv22_GS_veg_Nygardshaugen_Holmegil_Allebilder", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/C10299r_Rv22_GS_veg_Nygardshaugen_Holmegil_Allebilder/FeatureServer"
+    }, 
+    {
+      "name" : "C1530910_E14_Mulighetsstudie_Bæreevne", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/C1530910_E14_Mulighetsstudie_Bæreevne/FeatureServer"
+    }, 
+    {
+      "name" : "C1530910_E14_Mulighetsstudie_Dekkebredde", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/C1530910_E14_Mulighetsstudie_Dekkebredde/FeatureServer"
+    }, 
+    {
+      "name" : "C1530910_E14_Mulighetsstudie_Delstrekning", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/C1530910_E14_Mulighetsstudie_Delstrekning/FeatureServer"
+    }, 
+    {
+      "name" : "C1530910_E14_Mulighetsstudie_Fartsgrense", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/C1530910_E14_Mulighetsstudie_Fartsgrense/FeatureServer"
+    }, 
+    {
+      "name" : "C1530910_E14_Mulighetsstudie_Kurvatur", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/C1530910_E14_Mulighetsstudie_Kurvatur/FeatureServer"
+    }, 
+    {
+      "name" : "C1530910_E14_Mulighetsstudie_Skred_punkt", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/C1530910_E14_Mulighetsstudie_Skred_punkt/FeatureServer"
+    }, 
+    {
+      "name" : "C1530910_E14_Mulighetsstudie_Stigning", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/C1530910_E14_Mulighetsstudie_Stigning/FeatureServer"
+    }, 
+    {
+      "name" : "C1530910_E14_Mulighetsstudie_Trafikkmengde", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/C1530910_E14_Mulighetsstudie_Trafikkmengde/FeatureServer"
+    }, 
+    {
+      "name" : "C1530910_E14_Mulighetsstudie_Trafikkregistreringsstasjon", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/C1530910_E14_Mulighetsstudie_Trafikkregistreringsstasjon/FeatureServer"
+    }, 
+    {
+      "name" : "C1530910_E14_Mulighetsstudie_Trafikkulykker", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/C1530910_E14_Mulighetsstudie_Trafikkulykker/FeatureServer"
+    }, 
+    {
+      "name" : "C1530910_E14_Mulighetsstudie_Tunnel_forslag", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/C1530910_E14_Mulighetsstudie_Tunnel_forslag/FeatureServer"
+    }, 
+    {
+      "name" : "C1530910_E14_Mulighetsstudie_Tunnel_forslag_2023", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/C1530910_E14_Mulighetsstudie_Tunnel_forslag_2023/FeatureServer"
+    }, 
+    {
+      "name" : "C1530910_E14_Mulighetsstudie_Ulykkeskostnad", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/C1530910_E14_Mulighetsstudie_Ulykkeskostnad/FeatureServer"
+    }, 
+    {
+      "name" : "C1530910_E14_Mulighetsstudie_VegROS", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/C1530910_E14_Mulighetsstudie_VegROS/FeatureServer"
+    }, 
+    {
+      "name" : "DCA40_Trinnvis_Utrullingsplan", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/DCA40_Trinnvis_Utrullingsplan/FeatureServer"
+    }, 
+    {
+      "name" : "DCA40_Tungbilladeinfrastruktur_KartlagtAreal", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/DCA40_Tungbilladeinfrastruktur_KartlagtAreal/FeatureServer"
+    }, 
+    {
+      "name" : "Deponi_Flakstadura", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Deponi_Flakstadura/FeatureServer"
+    }, 
+    {
+      "name" : "DK_9104_E61", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/DK_9104_E61/FeatureServer"
+    }, 
+    {
+      "name" : "DK9502_Salten_2025_2030", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/DK9502_Salten_2025_2030/FeatureServer"
+    }, 
+    {
+      "name" : "DMK_Innlandet_merge_clip", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/DMK_Innlandet_merge_clip/FeatureServer"
+    }, 
+    {
+      "name" : "Døgnhvileplasser_ArcgisOnline", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Døgnhvileplasser_ArcgisOnline/FeatureServer"
+    }, 
+    {
+      "name" : "Dråpe_Polyline_Merge", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Dråpe_Polyline_Merge/FeatureServer"
+    }, 
+    {
+      "name" : "Driftskontrakt_94061", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Driftskontrakt_94061/FeatureServer"
+    }, 
+    {
+      "name" : "E10_hålogalandsvegen_Vannflate", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/E10_hålogalandsvegen_Vannflate/FeatureServer"
+    }, 
+    {
+      "name" : "E10_Lofoten_alle_bilder", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/E10_Lofoten_alle_bilder/FeatureServer"
+    }, 
+    {
+      "name" : "E10_Profillinjer", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/E10_Profillinjer/FeatureServer"
+    }, 
+    {
+      "name" : "E136_Lerstad_Campus_bilder", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/E136_Lerstad_Campus_bilder/FeatureServer"
+    }, 
+    {
+      "name" : "E136_LerstadCampus2", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/E136_LerstadCampus2/FeatureServer"
+    }, 
+    {
+      "name" : "E16_Bjørum_Skaret_Alle_Vippser_nov_2021", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/E16_Bjørum_Skaret_Alle_Vippser_nov_2021/FeatureServer"
+    }, 
+    {
+      "name" : "E39_K_S_S_Vannbøner", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/E39_K_S_S_Vannbøner/FeatureServer"
+    }, 
+    {
+      "name" : "E39_K3_Anleggsgrense", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/E39_K3_Anleggsgrense/FeatureServer"
+    }, 
+    {
+      "name" : "E39_Osbanen_sykkel_Nesttun_Lagunen_bilder", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/E39_Osbanen_sykkel_Nesttun_Lagunen_bilder/FeatureServer"
+    }, 
+    {
+      "name" : "E39_Plangrense_20231016", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/E39_Plangrense_20231016/FeatureServer"
+    }, 
+    {
+      "name" : "E39_Vegsund_Breivika_KDP", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/E39_Vegsund_Breivika_KDP/FeatureServer"
+    }, 
+    {
+      "name" : "EDøgnhvileplasser_20201101", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/EDøgnhvileplasser_20201101/FeatureServer"
+    }, 
+    {
+      "name" : "egengeometri_tunnellop", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/egengeometri_tunnellop/FeatureServer"
+    }, 
+    {
+      "name" : "Eksisterande_reguleringsplanar", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Eksisterande_reguleringsplanar/FeatureServer"
+    }, 
+    {
+      "name" : "Eksisterende_VA_Bærum_og_Hole", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Eksisterende_VA_Bærum_og_Hole/FeatureServer"
+    }, 
+    {
+      "name" : "ERF_Faregrad_20211112", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/ERF_Faregrad_20211112/FeatureServer"
+    }, 
+    {
+      "name" : "ERF_Faregrad_ADT_20211126", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/ERF_Faregrad_ADT_20211126/FeatureServer"
+    }, 
+    {
+      "name" : "ERF_SVV_Kvikkleire_20211112", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/ERF_SVV_Kvikkleire_20211112/FeatureServer"
+    }, 
+    {
+      "name" : "ERFK_NADAG_Dissolve", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/ERFK_NADAG_Dissolve/FeatureServer"
+    }, 
+    {
+      "name" : "Erverv", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Erverv/FeatureServer"
+    }, 
+    {
+      "name" : "f_skilt_FAS_Project", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/f_skilt_FAS_Project/FeatureServer"
+    }, 
+    {
+      "name" : "f_va_line_UTM33", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/f_va_line_UTM33/FeatureServer"
+    }, 
+    {
+      "name" : "F_va_rør_utm33", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/F_va_rør_utm33/FeatureServer"
+    }, 
+    {
+      "name" : "f_veg_L_B12164R01_profilering", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/f_veg_L_B12164R01_profilering/FeatureServer"
+    }, 
+    {
+      "name" : "f_veg_profilering", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/f_veg_profilering/FeatureServer"
+    }, 
+    {
+      "name" : "FAS_N50_Arealdekke", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/FAS_N50_Arealdekke/FeatureServer"
+    }, 
+    {
+      "name" : "fdren_stikkrenne_e8_sørbotn_laukslett_", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/fdren_stikkrenne_e8_sørbotn_laukslett_/FeatureServer"
+    }, 
+    {
+      "name" : "FeatureLine_utm33", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/FeatureLine_utm33/FeatureServer"
+    }, 
+    {
+      "name" : "feilfjerning_KV_fartsgrenser", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/feilfjerning_KV_fartsgrenser/FeatureServer"
+    }, 
+    {
+      "name" : "Feilstatus_fartsgrenser", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Feilstatus_fartsgrenser/FeatureServer"
+    }, 
+    {
+      "name" : "Feilvarsel_fartsgrense_skiltplate", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Feilvarsel_fartsgrense_skiltplate/FeatureServer"
+    }, 
+    {
+      "name" : "Feilvarsel_fartsgrense_skiltplate_KV", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Feilvarsel_fartsgrense_skiltplate_KV/FeatureServer"
+    }, 
+    {
+      "name" : "FKB_AR5_Flakstadpollen", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/FKB_AR5_Flakstadpollen/FeatureServer"
+    }, 
+    {
+      "name" : "flerbruker", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/flerbruker/FeatureServer"
+    }, 
+    {
+      "name" : "Forskjæringer_rv1", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Forskjæringer_rv1/FeatureServer"
+    }, 
+    {
+      "name" : "Forskjæringer_WFL1", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Forskjæringer_WFL1/FeatureServer"
+    }, 
+    {
+      "name" : "Fra_Rapportweb_alle", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Fra_Rapportweb_alle/FeatureServer"
+    }, 
+    {
+      "name" : "Fremmendearter", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Fremmendearter/FeatureServer"
+    }, 
+    {
+      "name" : "Friluftsliv_by_og_bygdeliv_E39StordOs", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Friluftsliv_by_og_bygdeliv_E39StordOs/FeatureServer"
+    }, 
+    {
+      "name" : "fskred_e8_sørbotn_laukslett_", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/fskred_e8_sørbotn_laukslett_/FeatureServer"
+    }, 
+    {
+      "name" : "fstøy_e8_", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/fstøy_e8_/FeatureServer"
+    }, 
+    {
+      "name" : "fveg_brukar_", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/fveg_brukar_/FeatureServer"
+    }, 
+    {
+      "name" : "fveg_e8_sorbotn_laukslett_0_4500_og_sarastein_", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/fveg_e8_sorbotn_laukslett_0_4500_og_sarastein_/FeatureServer"
+    }, 
+    {
+      "name" : "fveg_e8_sorbotn_laukslett_4500_9600_", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/fveg_e8_sorbotn_laukslett_4500_9600_/FeatureServer"
+    }, 
+    {
+      "name" : "fveg_e8_sorbotn_laukslett_sekundærveger_", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/fveg_e8_sorbotn_laukslett_sekundærveger_/FeatureServer"
+    }, 
+    {
+      "name" : "fveg_skogsveger_", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/fveg_skogsveger_/FeatureServer"
+    }, 
+    {
+      "name" : "fylker_uten_gangfeltobjekt_vs_typeveggangfelt_problem", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/fylker_uten_gangfeltobjekt_vs_typeveggangfelt_problem/FeatureServer"
+    }, 
+    {
+      "name" : "fylker_uten_korte_lenker", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/fylker_uten_korte_lenker/FeatureServer"
+    }, 
+    {
+      "name" : "Fylkesfiltrering", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Fylkesfiltrering/FeatureServer"
+    }, 
+    {
+      "name" : "GSV_Griniveien_Roa_Bygrensa_allebilder", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/GSV_Griniveien_Roa_Bygrensa_allebilder/FeatureServer"
+    }, 
+    {
+      "name" : "Haloglandsvegen_Senterlinje_P15", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Haloglandsvegen_Senterlinje_P15/FeatureServer"
+    }, 
+    {
+      "name" : "Hogsggrense_utm33", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Hogsggrense_utm33/FeatureServer"
+    }, 
+    {
+      "name" : "Innspill", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Innspill/FeatureServer"
+    }, 
+    {
+      "name" : "Jernbane_Banenor", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Jernbane_Banenor/FeatureServer"
+    }, 
+    {
+      "name" : "Kjaglidalsveien", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Kjaglidalsveien/FeatureServer"
+    }, 
+    {
+      "name" : "Kommunedelplan_2019_E39StordOs", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Kommunedelplan_2019_E39StordOs/FeatureServer"
+    }, 
+    {
+      "name" : "kommuneutvalg_fartsgrensedashboard", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/kommuneutvalg_fartsgrensedashboard/FeatureServer"
+    }, 
+    {
+      "name" : "Kontroll_objekt_gangfelt_typeveg_gangfelt", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Kontroll_objekt_gangfelt_typeveg_gangfelt/FeatureServer"
+    }, 
+    {
+      "name" : "Kontrollplass_Skilt", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Kontrollplass_Skilt/FeatureServer"
+    }, 
+    {
+      "name" : "Kulturarv_Ørskogfjellet", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Kulturarv_Ørskogfjellet/FeatureServer"
+    }, 
+    {
+      "name" : "Kulturarv_WFL1", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Kulturarv_WFL1/FeatureServer"
+    }, 
+    {
+      "name" : "Kvikkleireomr__SVV", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Kvikkleireomr__SVV/FeatureServer"
+    }, 
+    {
+      "name" : "Kvikkleireomr_Bratt", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Kvikkleireomr_Bratt/FeatureServer"
+    }, 
+    {
+      "name" : "Kvitstripe", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Kvitstripe/FeatureServer"
+    }, 
+    {
+      "name" : "Ladestasjoner_Sverige", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Ladestasjoner_Sverige/FeatureServer"
+    }, 
+    {
+      "name" : "Landskap_NIN_Flakstad", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Landskap_NIN_Flakstad/FeatureServer"
+    }, 
+    {
+      "name" : "Landskapsbilde_E39StordOs", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Landskapsbilde_E39StordOs/FeatureServer"
+    }, 
+    {
+      "name" : "Landskapskarakter", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Landskapskarakter/FeatureServer"
+    }, 
+    {
+      "name" : "Låseområder", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Låseområder/FeatureServer"
+    }, 
+    {
+      "name" : "Lm_Landskap_og_miljo_WFL1", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Lm_Landskap_og_miljo_WFL1/FeatureServer"
+    }, 
+    {
+      "name" : "Lm_Landskap_og_miljo_WFL1_4ecad", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Lm_Landskap_og_miljo_WFL1_4ecad/FeatureServer"
+    }, 
+    {
+      "name" : "Lm_Landskap_og_miljo_WFL1_5ea21", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Lm_Landskap_og_miljo_WFL1_5ea21/FeatureServer"
+    }, 
+    {
+      "name" : "Losmasse_KunRiksveg_Dissolve", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Losmasse_KunRiksveg_Dissolve/FeatureServer"
+    }, 
+    {
+      "name" : "Medvirkning_E18_Lysaker_Ramstadsletta_Byggefase_Mime", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Medvirkning_E18_Lysaker_Ramstadsletta_Byggefase_Mime/FeatureServer"
+    }, 
+    {
+      "name" : "Medvirkning_E39_Vågsbotn_Klauvaneset_MIME", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Medvirkning_E39_Vågsbotn_Klauvaneset_MIME/FeatureServer"
+    }, 
+    {
+      "name" : "Medvirkning_E39_Vågsbotn_Klauvaneset_publikum", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Medvirkning_E39_Vågsbotn_Klauvaneset_publikum/FeatureServer"
+    }, 
+    {
+      "name" : "Meldingstjeneste_Bypakke_Ålesund_MIME", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Meldingstjeneste_Bypakke_Ålesund_MIME/FeatureServer"
+    }, 
+    {
+      "name" : "Meldingstjeneste_Bypakke_Ålesund_publikum", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Meldingstjeneste_Bypakke_Ålesund_publikum/FeatureServer"
+    }, 
+    {
+      "name" : "Meldingstjeneste_E18_Lysaker-Ramstadsletta_3_visning", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Meldingstjeneste_E18_Lysaker-Ramstadsletta_3_visning/FeatureServer"
+    }, 
+    {
+      "name" : "Meldingstjeneste_E39_Bradbenken__Glass_Knag_Publikum", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Meldingstjeneste_E39_Bradbenken__Glass_Knag_Publikum/FeatureServer"
+    }, 
+    {
+      "name" : "Meldingstjeneste_E39_Bradbenken_Glass_Knag_Mime", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Meldingstjeneste_E39_Bradbenken_Glass_Knag_Mime/FeatureServer"
+    }, 
+    {
+      "name" : "MIME_fartsgrensevedtak_VS_fartsgrenser_NVDB", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/MIME_fartsgrensevedtak_VS_fartsgrenser_NVDB/FeatureServer"
+    }, 
+    {
+      "name" : "N50_Riksveg", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/N50_Riksveg/FeatureServer"
+    }, 
+    {
+      "name" : "NADAG_Kvikkleire", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NADAG_Kvikkleire/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonaleSykkelruter_Samlet17082022", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonaleSykkelruter_Samlet17082022/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonaleSykkelruter_Samlet17082022_1a7fe", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonaleSykkelruter_Samlet17082022_1a7fe/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonaleSykkelruter_Samlet17082022_2da1f", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonaleSykkelruter_Samlet17082022_2da1f/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonaleSykkelruter_Samlet17082022_362cd", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonaleSykkelruter_Samlet17082022_362cd/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonaleSykkelruter_Samlet17082022_3f2ab", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonaleSykkelruter_Samlet17082022_3f2ab/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonaleSykkelruter_Samlet17082022_4cb2e", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonaleSykkelruter_Samlet17082022_4cb2e/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonaleSykkelruter_Samlet17082022_785a9", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonaleSykkelruter_Samlet17082022_785a9/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonaleSykkelruter_Samlet17082022_7cbf7", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonaleSykkelruter_Samlet17082022_7cbf7/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonaleSykkelruter_Samlet17082022_951e8", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonaleSykkelruter_Samlet17082022_951e8/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonaleSykkelruter_Samlet17082022_987a2", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonaleSykkelruter_Samlet17082022_987a2/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonaleSykkelruter_Samlet17082022_a5ec1", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonaleSykkelruter_Samlet17082022_a5ec1/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonaleSykkelruter_Samlet17082022_b3904", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonaleSykkelruter_Samlet17082022_b3904/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonaleSykkelruter_Samlet17082022_cda22", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonaleSykkelruter_Samlet17082022_cda22/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonaleSykkelruter_Samlet17082022_ed1a4", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonaleSykkelruter_Samlet17082022_ed1a4/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonaleSykkelruter_Samlet17082022_f41bf", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonaleSykkelruter_Samlet17082022_f41bf/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute_Rutenavn", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute_Rutenavn/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute_Rutenavn_118b6", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute_Rutenavn_118b6/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute_Rutenavn_166b1", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute_Rutenavn_166b1/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute_Rutenavn_2427a", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute_Rutenavn_2427a/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute_Rutenavn_2d98c", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute_Rutenavn_2d98c/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute_Rutenavn_3ae87", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute_Rutenavn_3ae87/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute_Rutenavn_3c1e0", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute_Rutenavn_3c1e0/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute_Rutenavn_4cda9", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute_Rutenavn_4cda9/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute_Rutenavn_508e9", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute_Rutenavn_508e9/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute_Rutenavn_591b3", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute_Rutenavn_591b3/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute_Rutenavn_61d7c", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute_Rutenavn_61d7c/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute_Rutenavn_b074a", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute_Rutenavn_b074a/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute_Rutenavn_be54c", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute_Rutenavn_be54c/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute_Rutenavn_c44bf", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute_Rutenavn_c44bf/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute_Rutenavn_d3946", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute_Rutenavn_d3946/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute_Rutenavn_e0638", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute_Rutenavn_e0638/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute1_Kystruta_Bergen_Lindesnes_linje", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute1_Kystruta_Bergen_Lindesnes_linje/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute1_Kystruta_Bodø_Trondheim_linje", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute1_Kystruta_Bodø_Trondheim_linje/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute1_Kystruta_Lindesnes_Sandefjord_Svinesund_Sverige_linje", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute1_Kystruta_Lindesnes_Sandefjord_Svinesund_Sverige_linje/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute1_Kystruta_Nordkapp_Tromsø_linje", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute1_Kystruta_Nordkapp_Tromsø_linje/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute1_Kystruta_Olderfjord_Hamningberg_linje", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute1_Kystruta_Olderfjord_Hamningberg_linje/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute1_Kystruta_Oslofjorden", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute1_Kystruta_Oslofjorden/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute1_Kystruta_Tromsø_Bodø_linje", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute1_Kystruta_Tromsø_Bodø_linje/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute1_Kystruta_Trondheim_Bergen_linje", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute1_Kystruta_Trondheim_Bergen_linje/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute2_Dalen_Rjukan_Imingfjell_Numedal", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute2_Dalen_Rjukan_Imingfjell_Numedal/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute2_Kanalruta_Dalen_Rjukan_Uvdal_linje", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute2_Kanalruta_Dalen_Rjukan_Uvdal_linje/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute2_Kanalruta_Larvik_Porsgrunn_Skien_linje", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute2_Kanalruta_Larvik_Porsgrunn_Skien_linje/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute2_Kanalruta_Skien_Ulefoss_Dalen_linje", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute2_Kanalruta_Skien_Ulefoss_Dalen_linje/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute2_Kanalruta_WFL1", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute2_Kanalruta_WFL1/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute3__FjordogFjell_Haukeli_Rauland_linje", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute3__FjordogFjell_Haukeli_Rauland_linje/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute3__FjordogFjell_Haukeli_Rauland_linje_3f6d5", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute3__FjordogFjell_Haukeli_Rauland_linje_3f6d5/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute3_Fjord_og_fjell_WFL1", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute3_Fjord_og_fjell_WFL1/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute3_Fjord_og_fjell_WFL1_f6eb8", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute3_Fjord_og_fjell_WFL1_f6eb8/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute3_FjordogFjell_Haukeli_Ryfylke_Stavanger_linje", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute3_FjordogFjell_Haukeli_Ryfylke_Stavanger_linje/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute3_FjordogFjell_Haukeli_Ryfylke_Stavanger_linje_c56da", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute3_FjordogFjell_Haukeli_Ryfylke_Stavanger_linje_c56da/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute3_FjordogFjell_Kristiansand_Setesdal_Haukeli_linje", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute3_FjordogFjell_Kristiansand_Setesdal_Haukeli_linje/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute3_FjordogFjell_Kristiansand_Setesdal_Haukeli_linje_a1c64", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute3_FjordogFjell_Kristiansand_Setesdal_Haukeli_linje_a1c64/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute3B_FjordogFjell_Hardanger_Ålesund_linje", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute3B_FjordogFjell_Hardanger_Ålesund_linje/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute4_Rallarvegen_Hallingdal_linje", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute4_Rallarvegen_Hallingdal_linje/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute4_Rallarvegen_Hallingdal_linje_f237a", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute4_Rallarvegen_Hallingdal_linje_f237a/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute4_Rallarvegen_Skarveheimen_rundt_linje", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute4_Rallarvegen_Skarveheimen_rundt_linje/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute4_Rallarvegen_Skarveheimen_rundt_linje_114c2", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute4_Rallarvegen_Skarveheimen_rundt_linje_114c2/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute4_Rallarvegen_WFL1", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute4_Rallarvegen_WFL1/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute4_Rallarvegen_WFL1_f859c", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute4_Rallarvegen_WFL1_f859c/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute5_Mjølkevegen_Gol_Vinstra_linje", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute5_Mjølkevegen_Gol_Vinstra_linje/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute5_Mjølkevegen_Gol_Vinstra_linje_6aee9", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute5_Mjølkevegen_Gol_Vinstra_linje_6aee9/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute5_Numedalsruta_Golsfjellet_linje", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute5_Numedalsruta_Golsfjellet_linje/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute5_Numedalsruta_Golsfjellet_linje_fb2dc", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute5_Numedalsruta_Golsfjellet_linje_fb2dc/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute5_Numedalsruta_WFL1", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute5_Numedalsruta_WFL1/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute5_Numedalsruta_WFL1_8b0ae", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute5_Numedalsruta_WFL1_8b0ae/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute6_Sognefjellsvegen_Røros_Rondane_Sognefjellet_Bergen_linje_94e70", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute6_Sognefjellsvegen_Røros_Rondane_Sognefjellet_Bergen_linje_94e70/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute7_Pilegrimsruta_Nidaros_Hamar_Oslo_Halden_linje_31730", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute7_Pilegrimsruta_Nidaros_Hamar_Oslo_Halden_linje_31730/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute8_Finnmarksruta_Alta_Kautokeino_Kirkenes_linje", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute8_Finnmarksruta_Alta_Kautokeino_Kirkenes_linje/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute8_Finnmarksruta_Alta_Kautokeino_Kirkenes_linje_4698c", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute8_Finnmarksruta_Alta_Kautokeino_Kirkenes_linje_4698c/FeatureServer"
+    }, 
+    {
+      "name" : "NasjonalSykkelrute9_Villmarksruta_Halden_Trysil_Røros_Trondheim_linje_cf916", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NasjonalSykkelrute9_Villmarksruta_Halden_Trysil_Røros_Trondheim_linje_cf916/FeatureServer"
+    }, 
+    {
+      "name" : "Naturbase", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Naturbase/FeatureServer"
+    }, 
+    {
+      "name" : "Naturmangfold_E39StordOs", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Naturmangfold_E39StordOs/FeatureServer"
+    }, 
+    {
+      "name" : "Naturområde___punkt", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Naturområde___punkt/FeatureServer"
+    }, 
+    {
+      "name" : "Naturtyper__Sweco_", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Naturtyper__Sweco_/FeatureServer"
+    }, 
+    {
+      "name" : "Naturtyper_nin_50_utvalg", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Naturtyper_nin_50_utvalg/FeatureServer"
+    }, 
+    {
+      "name" : "Neringstrafikk_Agder", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Neringstrafikk_Agder/FeatureServer"
+    }, 
+    {
+      "name" : "Neringstrafikk_POI", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Neringstrafikk_POI/FeatureServer"
+    }, 
+    {
+      "name" : "NettKonsesjonsomrade", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NettKonsesjonsomrade/FeatureServer"
+    }, 
+    {
+      "name" : "nilsst", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/nilsst/FeatureServer"
+    }, 
+    {
+      "name" : "NTP_2025_2036_Prosjektportefolje_View", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NTP_2025_2036_Prosjektportefolje_View/FeatureServer"
+    }, 
+    {
+      "name" : "NTP_Prosjekt_Dashboard", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NTP_Prosjekt_Dashboard/FeatureServer"
+    }, 
+    {
+      "name" : "NTP_SVV_Utvalgtestrekninger", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NTP_SVV_Utvalgtestrekninger/FeatureServer"
+    }, 
+    {
+      "name" : "ny_fartsgrensestrekning", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/ny_fartsgrensestrekning/FeatureServer"
+    }, 
+    {
+      "name" : "ny_fartsgrensestrekning_sluttpunkt", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/ny_fartsgrensestrekning_sluttpunkt/FeatureServer"
+    }, 
+    {
+      "name" : "ny_fartsgrensestrekning_startpunkt", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/ny_fartsgrensestrekning_startpunkt/FeatureServer"
+    }, 
+    {
+      "name" : "Områdebeskrivelser_naturverdi", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Områdebeskrivelser_naturverdi/FeatureServer"
+    }, 
+    {
+      "name" : "Oppdateringstidspunkt_Veganlegg_NVDB", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Oppdateringstidspunkt_Veganlegg_NVDB/FeatureServer"
+    }, 
+    {
+      "name" : "OPS_E10_Hålogalandsvegen_Allebilder", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/OPS_E10_Hålogalandsvegen_Allebilder/FeatureServer"
+    }, 
+    {
+      "name" : "OPS_E10_Stikkrenner_19_06_2024", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/OPS_E10_Stikkrenner_19_06_2024/FeatureServer"
+    }, 
+    {
+      "name" : "Ørskogfjellet_Rød", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Ørskogfjellet_Rød/FeatureServer"
+    }, 
+    {
+      "name" : "Oversikt_vegmodell", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Oversikt_vegmodell/FeatureServer"
+    }, 
+    {
+      "name" : "Paavirket_myr", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Paavirket_myr/FeatureServer"
+    }, 
+    {
+      "name" : "pg_langs_ev_rv", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/pg_langs_ev_rv/FeatureServer"
+    }, 
+    {
+      "name" : "pg_langs_fv", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/pg_langs_fv/FeatureServer"
+    }, 
+    {
+      "name" : "Plan_E39StordOs", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Plan_E39StordOs/FeatureServer"
+    }, 
+    {
+      "name" : "Plangrense_20220816", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Plangrense_20220816/FeatureServer"
+    }, 
+    {
+      "name" : "Plassering_fartsgrensevedtak", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Plassering_fartsgrensevedtak/FeatureServer"
+    }, 
+    {
+      "name" : "Plassering_fartsgrensevedtak_kobling_vegnett", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Plassering_fartsgrensevedtak_kobling_vegnett/FeatureServer"
+    }, 
+    {
+      "name" : "Profilnummer_UTM33", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Profilnummer_UTM33/FeatureServer"
+    }, 
+    {
+      "name" : "Reg_plan_shape", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Reg_plan_shape/FeatureServer"
+    }, 
+    {
+      "name" : "Reg_plan_Stormyra_Barhals", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Reg_plan_Stormyra_Barhals/FeatureServer"
+    }, 
+    {
+      "name" : "RegOst_Tommer74_Bedrifter", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/RegOst_Tommer74_Bedrifter/FeatureServer"
+    }, 
+    {
+      "name" : "Reguleringsplan_Barhals_Staurset", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Reguleringsplan_Barhals_Staurset/FeatureServer"
+    }, 
+    {
+      "name" : "Reguleringsplan_E8_Storskreda_Kantornes", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Reguleringsplan_E8_Storskreda_Kantornes/FeatureServer"
+    }, 
+    {
+      "name" : "Rekkverk_", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Rekkverk_/FeatureServer"
+    }, 
+    {
+      "name" : "Rigg_og_deponiområder", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Rigg_og_deponiområder/FeatureServer"
+    }, 
+    {
+      "name" : "Riksveg_forenkla_8ca47", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Riksveg_forenkla_8ca47/FeatureServer"
+    }, 
+    {
+      "name" : "Riksvegrute_AntOmr", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Riksvegrute_AntOmr/FeatureServer"
+    }, 
+    {
+      "name" : "ROS_K3_E39_stormyra_staurset_utm33", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/ROS_K3_E39_stormyra_staurset_utm33/FeatureServer"
+    }, 
+    {
+      "name" : "RpGrense_Tunnel", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/RpGrense_Tunnel/FeatureServer"
+    }, 
+    {
+      "name" : "Rv_22_Rudskogen_E18_allebilder", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Rv_22_Rudskogen_E18_allebilder/FeatureServer"
+    }, 
+    {
+      "name" : "Rv_41_Askaana_Smedbakken_byggeplan", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Rv_41_Askaana_Smedbakken_byggeplan/FeatureServer"
+    }, 
+    {
+      "name" : "Rv_41_Soere_Herefoss_Engebu", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Rv_41_Soere_Herefoss_Engebu/FeatureServer"
+    }, 
+    {
+      "name" : "segmentert_vegnett_korte_lengder", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/segmentert_vegnett_korte_lengder/FeatureServer"
+    }, 
+    {
+      "name" : "segmentert_vegnett_korte_lengder_uttrekkstidspunkt", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/segmentert_vegnett_korte_lengder_uttrekkstidspunkt/FeatureServer"
+    }, 
+    {
+      "name" : "segmentert_vegnett_U_ved_tunnellop", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/segmentert_vegnett_U_ved_tunnellop/FeatureServer"
+    }, 
+    {
+      "name" : "Seilas", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Seilas/FeatureServer"
+    }, 
+    {
+      "name" : "Senterlinje_", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Senterlinje_/FeatureServer"
+    }, 
+    {
+      "name" : "Senterlinje_OPS_haalogalandsvegen", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Senterlinje_OPS_haalogalandsvegen/FeatureServer"
+    }, 
+    {
+      "name" : "senterlinje2024Featu_Project", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/senterlinje2024Featu_Project/FeatureServer"
+    }, 
+    {
+      "name" : "service_18561", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/service_18561/FeatureServer"
+    }, 
+    {
+      "name" : "service_25ef7f09c243413db6d559dcc34fbee8", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/service_25ef7f09c243413db6d559dcc34fbee8/FeatureServer"
+    }, 
+    {
+      "name" : "service_4ec5f", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/service_4ec5f/FeatureServer"
+    }, 
+    {
+      "name" : "service_73811", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/service_73811/FeatureServer"
+    }, 
+    {
+      "name" : "service_7bf18fc2670b4ca091f3fe5ab26a5dc1", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/service_7bf18fc2670b4ca091f3fe5ab26a5dc1/FeatureServer"
+    }, 
+    {
+      "name" : "service_7f1dc", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/service_7f1dc/FeatureServer"
+    }, 
+    {
+      "name" : "service_9aa1c736c52e43cab3212fe813b13a99", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/service_9aa1c736c52e43cab3212fe813b13a99/FeatureServer"
+    }, 
+    {
+      "name" : "service_9aba086078cb4890a1dce9c285b08e8c", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/service_9aba086078cb4890a1dce9c285b08e8c/FeatureServer"
+    }, 
+    {
+      "name" : "service_cfef14590b6e47dea6366a6b874cfebb", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/service_cfef14590b6e47dea6366a6b874cfebb/FeatureServer"
+    }, 
+    {
+      "name" : "service_d56db", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/service_d56db/FeatureServer"
+    }, 
+    {
+      "name" : "service_dda10", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/service_dda10/FeatureServer"
+    }, 
+    {
+      "name" : "service_edde7", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/service_edde7/FeatureServer"
+    }, 
+    {
+      "name" : "SHA_risikoforhold", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/SHA_risikoforhold/FeatureServer"
+    }, 
+    {
+      "name" : "SHA_risikoforhold_linje", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/SHA_risikoforhold_linje/FeatureServer"
+    }, 
+    {
+      "name" : "SHA_risikoforhold_pkt", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/SHA_risikoforhold_pkt/FeatureServer"
+    }, 
+    {
+      "name" : "Sikringsanlegg", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Sikringsanlegg/FeatureServer"
+    }, 
+    {
+      "name" : "Statens_vegvesen___MODI_WFL1", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Statens_vegvesen___MODI_WFL1/FeatureServer"
+    }, 
+    {
+      "name" : "Statens_vegvesen___MODI_WFL2", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Statens_vegvesen___MODI_WFL2/FeatureServer"
+    }, 
+    {
+      "name" : "statistikk_antall_feil", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/statistikk_antall_feil/FeatureServer"
+    }, 
+    {
+      "name" : "Stedsnavn_til_3D_modell", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Stedsnavn_til_3D_modell/FeatureServer"
+    }, 
+    {
+      "name" : "Stortingets_Transportkomite_Akershus_oktober_2024_reiserute", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Stortingets_Transportkomite_Akershus_oktober_2024_reiserute/FeatureServer"
+    }, 
+    {
+      "name" : "Stortingskomite_Akershus_oktober_2024_stoppunkter", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Stortingskomite_Akershus_oktober_2024_stoppunkter/FeatureServer"
+    }, 
+    {
+      "name" : "surfaceobjects_E16_Slen_Haugsvik_20240131_102610", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/surfaceobjects_E16_Slen_Haugsvik_20240131_102610/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_00500c0bcf4f436f9718998d45008ea0_results", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_00500c0bcf4f436f9718998d45008ea0_results/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_055e7802809a4a13849de141f95c384f_form", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_055e7802809a4a13849de141f95c384f_form/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_055e7802809a4a13849de141f95c384f_results", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_055e7802809a4a13849de141f95c384f_results/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_0ceb823e1eed49b9b9621fda08d08674", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_0ceb823e1eed49b9b9621fda08d08674/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_0ceb823e1eed49b9b9621fda08d08674_form", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_0ceb823e1eed49b9b9621fda08d08674_form/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_2e4558bd7588434b9aa98a691a0e8fc5_form", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_2e4558bd7588434b9aa98a691a0e8fc5_form/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_4e3c38358ebf4fd4aa910cd6f03a929f", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_4e3c38358ebf4fd4aa910cd6f03a929f/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_4e3c38358ebf4fd4aa910cd6f03a929f_form", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_4e3c38358ebf4fd4aa910cd6f03a929f_form/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_56c2e_stakeholder", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_56c2e_stakeholder/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_65bc56eca9ac44c2a13ef38041c0c0b2_form", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_65bc56eca9ac44c2a13ef38041c0c0b2_form/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_8bf98d00e07d445080e13b4605f67deb_results", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_8bf98d00e07d445080e13b4605f67deb_results/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_b6c2dcbb51f040efbe993c77a7876e5d_form", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_b6c2dcbb51f040efbe993c77a7876e5d_form/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_b8c7697986864582a1ddaa67b617ed06_form", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_b8c7697986864582a1ddaa67b617ed06_form/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_bc69b488059f4ac0abb192e181e5dd6c_form", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_bc69b488059f4ac0abb192e181e5dd6c_form/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_d8951f0e7c2b46598065e8c37a2cc26e", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_d8951f0e7c2b46598065e8c37a2cc26e/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_d8951f0e7c2b46598065e8c37a2cc26e_form", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_d8951f0e7c2b46598065e8c37a2cc26e_form/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_d8951f0e7c2b46598065e8c37a2cc26e_results", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_d8951f0e7c2b46598065e8c37a2cc26e_results/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_e2d498979c884e34b26f51d4987ffb2a", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_e2d498979c884e34b26f51d4987ffb2a/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_e2d498979c884e34b26f51d4987ffb2a_form", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_e2d498979c884e34b26f51d4987ffb2a_form/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_e2d498979c884e34b26f51d4987ffb2a_results", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_e2d498979c884e34b26f51d4987ffb2a_results/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_e734a21117c449fead0e791998910c96_form", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_e734a21117c449fead0e791998910c96_form/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_f73ffeb87b254cbe99c5e292b942232a", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_f73ffeb87b254cbe99c5e292b942232a/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_f73ffeb87b254cbe99c5e292b942232a_form", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_f73ffeb87b254cbe99c5e292b942232a_form/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_f73ffeb87b254cbe99c5e292b942232a_results", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_f73ffeb87b254cbe99c5e292b942232a_results/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_fe60d6b8af76498ca54c67e9db998d90_form", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_fe60d6b8af76498ca54c67e9db998d90_form/FeatureServer"
+    }, 
+    {
+      "name" : "SVV_Kvikkleirepunkt_utenfor", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/SVV_Kvikkleirepunkt_utenfor/FeatureServer"
+    }, 
+    {
+      "name" : "SVV_Teig_innlandet34", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/SVV_Teig_innlandet34/FeatureServer"
+    }, 
+    {
+      "name" : "SVV_Tommer74_Pilot_2021_2024", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/SVV_Tommer74_Pilot_2021_2024/FeatureServer"
+    }, 
+    {
+      "name" : "T_geom", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/T_geom/FeatureServer"
+    }, 
+    {
+      "name" : "Tiltak_Bypakke_Nedre_Glomma", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Tiltak_Bypakke_Nedre_Glomma/FeatureServer"
+    }, 
+    {
+      "name" : "Trafikkmengde_Riksveg", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Trafikkmengde_Riksveg/FeatureServer"
+    }, 
+    {
+      "name" : "Trafikkstasjon_vekt", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Trafikkstasjon_vekt/FeatureServer"
+    }, 
+    {
+      "name" : "Transport_og_kommunikasjonskomiteen_2024_Vestfold_Reiserute", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Transport_og_kommunikasjonskomiteen_2024_Vestfold_Reiserute/FeatureServer"
+    }, 
+    {
+      "name" : "Transportkomite_2024_Telemark_fylke_reiserute", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Transportkomite_2024_Telemark_fylke_reiserute/FeatureServer"
+    }, 
+    {
+      "name" : "Transportkomite_2024_Telemark_fylke_stoppunkter", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Transportkomite_2024_Telemark_fylke_stoppunkter/FeatureServer"
+    }, 
+    {
+      "name" : "Transportkomiteen_2024_Vestfold_reiserute", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Transportkomiteen_2024_Vestfold_reiserute/FeatureServer"
+    }, 
+    {
+      "name" : "Transportkomiteen_2024_Vestfold_stopppunkter", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Transportkomiteen_2024_Vestfold_stopppunkter/FeatureServer"
+    }, 
+    {
+      "name" : "TRSPKMT_Nordland_Reise", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/TRSPKMT_Nordland_Reise/FeatureServer"
+    }, 
+    {
+      "name" : "TRSPKMT_Nordland_Stopp", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/TRSPKMT_Nordland_Stopp/FeatureServer"
+    }, 
+    {
+      "name" : "TRSPKMT_Reiserute_Mandag", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/TRSPKMT_Reiserute_Mandag/FeatureServer"
+    }, 
+    {
+      "name" : "TRSPKMT_Reiserute_Onsdag", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/TRSPKMT_Reiserute_Onsdag/FeatureServer"
+    }, 
+    {
+      "name" : "TRSPKMT_Reiserute_Tirsdag", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/TRSPKMT_Reiserute_Tirsdag/FeatureServer"
+    }, 
+    {
+      "name" : "TRSPKMT_Stoppesteder", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/TRSPKMT_Stoppesteder/FeatureServer"
+    }, 
+    {
+      "name" : "TRSPKMT_Viken_Reise", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/TRSPKMT_Viken_Reise/FeatureServer"
+    }, 
+    {
+      "name" : "TRSPKMT_Viken_Stopp", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/TRSPKMT_Viken_Stopp/FeatureServer"
+    }, 
+    {
+      "name" : "TRSPKMT_Viken_Stopp_visning", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/TRSPKMT_Viken_Stopp_visning/FeatureServer"
+    }, 
+    {
+      "name" : "Tunnelløp_linje", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Tunnelløp_linje/FeatureServer"
+    }, 
+    {
+      "name" : "Urfolksinteresser", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Urfolksinteresser/FeatureServer"
+    }, 
+    {
+      "name" : "Utsikt2", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Utsikt2/FeatureServer"
+    }, 
+    {
+      "name" : "uttrekkstidspunkt_konsistenskontroll_fartsgrense", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/uttrekkstidspunkt_konsistenskontroll_fartsgrense/FeatureServer"
+    }, 
+    {
+      "name" : "uttrekkstidspunkt_konsistenskontroll_fartsgrense_KV", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/uttrekkstidspunkt_konsistenskontroll_fartsgrense_KV/FeatureServer"
+    }, 
+    {
+      "name" : "uttrekkstidspunkt_vegnettslaaser", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/uttrekkstidspunkt_vegnettslaaser/FeatureServer"
+    }, 
+    {
+      "name" : "Vannkjemi_marint", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Vannkjemi_marint/FeatureServer"
+    }, 
+    {
+      "name" : "Veg_profil_nummer", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Veg_profil_nummer/FeatureServer"
+    }, 
+    {
+      "name" : "Veganlegg_NVDB_geometri", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Veganlegg_NVDB_geometri/FeatureServer"
+    }, 
+    {
+      "name" : "Veganlegg_NVDB_geometri_punkt", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Veganlegg_NVDB_geometri_punkt/FeatureServer"
+    }, 
+    {
+      "name" : "Veganlegg_NVDB_lokasjon_geometri", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Veganlegg_NVDB_lokasjon_geometri/FeatureServer"
+    }, 
+    {
+      "name" : "Veggeometri", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Veggeometri/FeatureServer"
+    }, 
+    {
+      "name" : "Veggeometri_Bjørum_Skaret", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Veggeometri_Bjørum_Skaret/FeatureServer"
+    }, 
+    {
+      "name" : "veglenke_feil_temakode", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/veglenke_feil_temakode/FeatureServer"
+    }, 
+    {
+      "name" : "veglenker_ikke_SVV", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/veglenker_ikke_SVV/FeatureServer"
+    }, 
+    {
+      "name" : "veglenker_Oppdragid_annen_bruker", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/veglenker_Oppdragid_annen_bruker/FeatureServer"
+    }, 
+    {
+      "name" : "veglenker_Oppdragid_vegnettsgruppa", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/veglenker_Oppdragid_vegnettsgruppa/FeatureServer"
+    }, 
+    {
+      "name" : "veglenker_Statens_vegvesen", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/veglenker_Statens_vegvesen/FeatureServer"
+    }, 
+    {
+      "name" : "vegmodell_haalogaland", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/vegmodell_haalogaland/FeatureServer"
+    }, 
+    {
+      "name" : "Vegnettsajourhold_linjer", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Vegnettsajourhold_linjer/FeatureServer"
+    }, 
+    {
+      "name" : "Vegnettsajourhold_oppdateringstidspunkt", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Vegnettsajourhold_oppdateringstidspunkt/FeatureServer"
+    }, 
+    {
+      "name" : "Vegnettsajourhold_punkt", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Vegnettsajourhold_punkt/FeatureServer"
+    }, 
+    {
+      "name" : "Vegtrase_CL_haalogalandsvegen", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Vegtrase_CL_haalogalandsvegen/FeatureServer"
+    }, 
+    {
+      "name" : "Verdi_Friluftsliv", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Verdi_Friluftsliv/FeatureServer"
+    }, 
+    {
+      "name" : "Verdi_IPfag", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Verdi_IPfag/FeatureServer"
+    }, 
+    {
+      "name" : "Verdi_Kulturarv_Nov2021", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Verdi_Kulturarv_Nov2021/FeatureServer"
+    }, 
+    {
+      "name" : "Verdi_Landskap", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Verdi_Landskap/FeatureServer"
+    }, 
+    {
+      "name" : "Verdi_landskapsbilde", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Verdi_landskapsbilde/FeatureServer"
+    }, 
+    {
+      "name" : "Verdi_Naturressurser", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Verdi_Naturressurser/FeatureServer"
+    }, 
+    {
+      "name" : "Verdikart_Naturmangfold_Orskog", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Verdikart_Naturmangfold_Orskog/FeatureServer"
+    }, 
+    {
+      "name" : "YM_E39_Vinjøra_Staurset_WFL1", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/YM_E39_Vinjøra_Staurset_WFL1/FeatureServer"
+    }, 
+    {
+      "name" : "5033751_Breivika_Flyplassen_Tverrfaglig_modell", 
+      "type" : "SceneServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/5033751_Breivika_Flyplassen_Tverrfaglig_modell/SceneServer"
+    }, 
+    {
+      "name" : "Bygg_innl", 
+      "type" : "SceneServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Bygg_innl/SceneServer"
+    }, 
+    {
+      "name" : "Bygninger", 
+      "type" : "SceneServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Bygninger/SceneServer"
+    }, 
+    {
+      "name" : "Bygninger_korrigert_busskur", 
+      "type" : "SceneServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Bygninger_korrigert_busskur/SceneServer"
+    }, 
+    {
+      "name" : "Bygninger_Storskreda_Kantornes", 
+      "type" : "SceneServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Bygninger_Storskreda_Kantornes/SceneServer"
+    }, 
+    {
+      "name" : "Bygninger_Tromsø", 
+      "type" : "SceneServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Bygninger_Tromsø/SceneServer"
+    }, 
+    {
+      "name" : "BygningerMedTekstur", 
+      "type" : "SceneServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/BygningerMedTekstur/SceneServer"
+    }, 
+    {
+      "name" : "E39_K3_Bygninger_utm33", 
+      "type" : "SceneServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/E39_K3_Bygninger_utm33/SceneServer"
+    }, 
+    {
+      "name" : "E39_K3_f_rekkverk_UTM33", 
+      "type" : "SceneServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/E39_K3_f_rekkverk_UTM33/SceneServer"
+    }, 
+    {
+      "name" : "Eksisterende_bruer", 
+      "type" : "SceneServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Eksisterende_bruer/SceneServer"
+    }, 
+    {
+      "name" : "f_bru", 
+      "type" : "SceneServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/f_bru/SceneServer"
+    }, 
+    {
+      "name" : "f_dren", 
+      "type" : "SceneServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/f_dren/SceneServer"
+    }, 
+    {
+      "name" : "f_elektro", 
+      "type" : "SceneServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/f_elektro/SceneServer"
+    }, 
+    {
+      "name" : "f_elektro_K3_S_S", 
+      "type" : "SceneServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/f_elektro_K3_S_S/SceneServer"
+    }, 
+    {
+      "name" : "f_geotek", 
+      "type" : "SceneServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/f_geotek/SceneServer"
+    }, 
+    {
+      "name" : "f_kon_K31", 
+      "type" : "SceneServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/f_kon_K31/SceneServer"
+    }, 
+    {
+      "name" : "f_kon_K32_uten_geocatch", 
+      "type" : "SceneServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/f_kon_K32_uten_geocatch/SceneServer"
+    }, 
+    {
+      "name" : "f_kon_K33_med_geocath", 
+      "type" : "SceneServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/f_kon_K33_med_geocath/SceneServer"
+    }, 
+    {
+      "name" : "f_kon_K34", 
+      "type" : "SceneServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/f_kon_K34/SceneServer"
+    }, 
+    {
+      "name" : "f_kon_K35", 
+      "type" : "SceneServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/f_kon_K35/SceneServer"
+    }, 
+    {
+      "name" : "f_kon_K36", 
+      "type" : "SceneServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/f_kon_K36/SceneServer"
+    }, 
+    {
+      "name" : "f_kon_K38_utm33", 
+      "type" : "SceneServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/f_kon_K38_utm33/SceneServer"
+    }, 
+    {
+      "name" : "f_lark", 
+      "type" : "SceneServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/f_lark/SceneServer"
+    }, 
+    {
+      "name" : "f_merking", 
+      "type" : "SceneServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/f_merking/SceneServer"
+    }, 
+    {
+      "name" : "f_oppmerking_UTM33", 
+      "type" : "SceneServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/f_oppmerking_UTM33/SceneServer"
+    }, 
+    {
+      "name" : "f_rekkverk", 
+      "type" : "SceneServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/f_rekkverk/SceneServer"
+    }, 
+    {
+      "name" : "f_skilt_FAS_Project", 
+      "type" : "SceneServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/f_skilt_FAS_Project/SceneServer"
+    }, 
+    {
+      "name" : "f_skilt_utm33_v1", 
+      "type" : "SceneServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/f_skilt_utm33_v1/SceneServer"
+    }, 
+    {
+      "name" : "f_skred", 
+      "type" : "SceneServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/f_skred/SceneServer"
+    }, 
+    {
+      "name" : "f_stoy", 
+      "type" : "SceneServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/f_stoy/SceneServer"
+    }, 
+    {
+      "name" : "f_tverrfaglig_modell", 
+      "type" : "SceneServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/f_tverrfaglig_modell/SceneServer"
+    }, 
+    {
+      "name" : "f_veg", 
+      "type" : "SceneServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/f_veg/SceneServer"
+    }, 
+    {
+      "name" : "f_veg_profilering", 
+      "type" : "SceneServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/f_veg_profilering/SceneServer"
+    }, 
+    {
+      "name" : "f_veg_UTM33_11_04", 
+      "type" : "SceneServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/f_veg_UTM33_11_04/SceneServer"
+    }, 
+    {
+      "name" : "g_k01", 
+      "type" : "SceneServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/g_k01/SceneServer"
+    }, 
+    {
+      "name" : "K3_S_S_Bygninger_flyttes", 
+      "type" : "SceneServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/K3_S_S_Bygninger_flyttes/SceneServer"
+    }, 
+    {
+      "name" : "Rekkverk_", 
+      "type" : "SceneServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Rekkverk_/SceneServer"
+    }, 
+    {
+      "name" : "FSK_NormalSkadekost_visning", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/FSK_NormalSkadekost_visning/FeatureServer"
+    }, 
+    {
+      "name" : "FSK_pr_kjoretoykm_visning", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/FSK_pr_kjoretoykm_visning/FeatureServer"
+    }, 
+    {
+      "name" : "FSK_pr_km_veg_visning", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/FSK_pr_km_veg_visning/FeatureServer"
+    }, 
+    {
+      "name" : "Fylke_DDA10_Hjortepåkjørsler", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Fylke_DDA10_Hjortepåkjørsler/FeatureServer"
+    }, 
+    {
+      "name" : "Kommune_DDA10_Hjortepåkjørsler", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Kommune_DDA10_Hjortepåkjørsler/FeatureServer"
+    }, 
+    {
+      "name" : "OSM_VS_NVDB_ERF", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/OSM_VS_NVDB_ERF/FeatureServer"
+    }, 
+    {
+      "name" : "Driftskontrakt_9301_Stavanger_2022_2027", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Driftskontrakt_9301_Stavanger_2022_2027/FeatureServer"
+    }, 
+    {
+      "name" : "Driftskontrakt_9303_Hardanger_og_Sogn_2022_2027", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Driftskontrakt_9303_Hardanger_og_Sogn_2022_2027/FeatureServer"
+    }, 
+    {
+      "name" : "E39_Vaagsbotn_Klauvaneset_varslingslinje", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/E39_Vaagsbotn_Klauvaneset_varslingslinje/FeatureServer"
+    }, 
+    {
+      "name" : "veglenker_Statens_vegvesen_arsregnskap", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/veglenker_Statens_vegvesen_arsregnskap/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_7d6eb2bf768f419eac3ebd732d32481e", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_7d6eb2bf768f419eac3ebd732d32481e/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_7d6eb2bf768f419eac3ebd732d32481e_form", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_7d6eb2bf768f419eac3ebd732d32481e_form/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_7d6eb2bf768f419eac3ebd732d32481e_results", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_7d6eb2bf768f419eac3ebd732d32481e_results/FeatureServer"
+    }, 
+    {
+      "name" : "B11889_Sykkelstamveg_Osbanen_Publikum", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/B11889_Sykkelstamveg_Osbanen_Publikum/FeatureServer"
+    }, 
+    {
+      "name" : "B11889_Sykkelstamveg_Osbanen_Mime", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/B11889_Sykkelstamveg_Osbanen_Mime/FeatureServer"
+    }, 
+    {
+      "name" : "ett_strekningsobjekt_flere_vegsystemvegnr", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/ett_strekningsobjekt_flere_vegsystemvegnr/FeatureServer"
+    }, 
+    {
+      "name" : "Plankart_des24", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Plankart_des24/FeatureServer"
+    }, 
+    {
+      "name" : "fylker_uten_vegsystem_strekning_problem", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/fylker_uten_vegsystem_strekning_problem/FeatureServer"
+    }, 
+    {
+      "name" : "ett_strekningsobjekt_flere_vegsystemvegnr_uttrekkstidspunkt", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/ett_strekningsobjekt_flere_vegsystemvegnr_uttrekkstidspunkt/FeatureServer"
+    }, 
+    {
+      "name" : "Vegsamling_E16_Slæn", 
+      "type" : "SceneServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Vegsamling_E16_Slæn/SceneServer"
+    }, 
+    {
+      "name" : "NVDB_Tunnellop_67", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NVDB_Tunnellop_67/FeatureServer"
+    }, 
+    {
+      "name" : "N50_Arealdekke_omrade_vann", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/N50_Arealdekke_omrade_vann/FeatureServer"
+    }, 
+    {
+      "name" : "CL_tunnel_alt1", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/CL_tunnel_alt1/FeatureServer"
+    }, 
+    {
+      "name" : "B11889_RpOmrade_E39_Osbanen", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/B11889_RpOmrade_E39_Osbanen/FeatureServer"
+    }, 
+    {
+      "name" : "Medvirkning_E39_Vegsund_Breivika_MIME", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Medvirkning_E39_Vegsund_Breivika_MIME/FeatureServer"
+    }, 
+    {
+      "name" : "Låseområder_supportsak_esri", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Låseområder_supportsak_esri/FeatureServer"
+    }, 
+    {
+      "name" : "E39_vegsund_breivika_hovedsykkeltrase", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/E39_vegsund_breivika_hovedsykkeltrase/FeatureServer"
+    }, 
+    {
+      "name" : "Lenkesekvenser_låst_slettmeg", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Lenkesekvenser_låst_slettmeg/FeatureServer"
+    }, 
+    {
+      "name" : "Støy_og_boligpriser_WFL1", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Støy_og_boligpriser_WFL1/FeatureServer"
+    }, 
+    {
+      "name" : "Andel med inntekt under 300 000", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Andel med inntekt under 300 000/FeatureServer"
+    }, 
+    {
+      "name" : "Gjennomsnittsinntekt", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Gjennomsnittsinntekt/FeatureServer"
+    }, 
+    {
+      "name" : "Andel uten formue", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Andel uten formue/FeatureServer"
+    }, 
+    {
+      "name" : "Utdanningsnivå", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Utdanningsnivå/FeatureServer"
+    }, 
+    {
+      "name" : "Bakgrunn", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Bakgrunn/FeatureServer"
+    }, 
+    {
+      "name" : "Map_WFL1_kopiSVV", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Map_WFL1_kopiSVV/FeatureServer"
+    }, 
+    {
+      "name" : "E39Alt0støysoner", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/E39Alt0støysoner/FeatureServer"
+    }, 
+    {
+      "name" : "E39Alt1støysoner", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/E39Alt1støysoner/FeatureServer"
+    }, 
+    {
+      "name" : "E39Alt2støysoner", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/E39Alt2støysoner/FeatureServer"
+    }, 
+    {
+      "name" : "E39_vegsund_breivika_plankart_alt1", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/E39_vegsund_breivika_plankart_alt1/FeatureServer"
+    }, 
+    {
+      "name" : "E39_vegsund_breivika_plankart_alt2", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/E39_vegsund_breivika_plankart_alt2/FeatureServer"
+    }, 
+    {
+      "name" : "9164_Buskerud_Elektro_og_veglys_2025_2030_Fordeling", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/9164_Buskerud_Elektro_og_veglys_2025_2030_Fordeling/FeatureServer"
+    }, 
+    {
+      "name" : "uttrekkstidspunkt_gangfeltobjekt_typeveggangfelt", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/uttrekkstidspunkt_gangfeltobjekt_typeveggangfelt/FeatureServer"
+    }, 
+    {
+      "name" : "9164_Buskerud_Elektro_og_veglys_2025_2030_trafikkmengde", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/9164_Buskerud_Elektro_og_veglys_2025_2030_trafikkmengde/FeatureServer"
+    }, 
+    {
+      "name" : "9164_Buskerud_elektro_og_veglys_2025_2030_Lysarmatur", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/9164_Buskerud_elektro_og_veglys_2025_2030_Lysarmatur/FeatureServer"
+    }, 
+    {
+      "name" : "E18_Sykkelekspressveg_Oddemarka_Tordenskjolds_gate_alle_bilder", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/E18_Sykkelekspressveg_Oddemarka_Tordenskjolds_gate_alle_bilder/FeatureServer"
+    }, 
+    {
+      "name" : "Allebilder_E18Sykkelekspressveg_Vollevannet_Oddemarka", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Allebilder_E18Sykkelekspressveg_Vollevannet_Oddemarka/FeatureServer"
+    }, 
+    {
+      "name" : "AGOL_Trafikkregistreringsstasjon", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/AGOL_Trafikkregistreringsstasjon/FeatureServer"
+    }, 
+    {
+      "name" : "Skred", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Skred/FeatureServer"
+    }, 
+    {
+      "name" : "Skred_Linje", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Skred_Linje/FeatureServer"
+    }, 
+    {
+      "name" : "Kritisk_KM", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Kritisk_KM/FeatureServer"
+    }, 
+    {
+      "name" : "Delstrekning", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Delstrekning/FeatureServer"
+    }, 
+    {
+      "name" : "Bereevne_Utbyggingsprioritet", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Bereevne_Utbyggingsprioritet/FeatureServer"
+    }, 
+    {
+      "name" : "Stigning", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Stigning/FeatureServer"
+    }, 
+    {
+      "name" : "VegROS", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/VegROS/FeatureServer"
+    }, 
+    {
+      "name" : "Tunnelforslag", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Tunnelforslag/FeatureServer"
+    }, 
+    {
+      "name" : "Trafikkmengde", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Trafikkmengde/FeatureServer"
+    }, 
+    {
+      "name" : "GSV_Planlagt", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/GSV_Planlagt/FeatureServer"
+    }, 
+    {
+      "name" : "Tilstandsindikator_Bru", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Tilstandsindikator_Bru/FeatureServer"
+    }, 
+    {
+      "name" : "uttrekkstidspunkt_Stor_avstand_fra_fartsgrenseskiltplate_til_fartsgrenseobjekt", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/uttrekkstidspunkt_Stor_avstand_fra_fartsgrenseskiltplate_til_fartsgrenseobjekt/FeatureServer"
+    }, 
+    {
+      "name" : "Stor_avstand_fra_fartsgrenseskiltplate_til_fartsgrense", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Stor_avstand_fra_fartsgrenseskiltplate_til_fartsgrense/FeatureServer"
+    }, 
+    {
+      "name" : "kommuneutvalg_skiltplate_fartsgrense_nærheten", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/kommuneutvalg_skiltplate_fartsgrense_nærheten/FeatureServer"
+    }, 
+    {
+      "name" : "eksisterende_fartsgrenser_på_historisk_vegnett", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/eksisterende_fartsgrenser_på_historisk_vegnett/FeatureServer"
+    }, 
+    {
+      "name" : "Vannområder", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Vannområder/FeatureServer"
+    }, 
+    {
+      "name" : "B11827_vk_e103_framdrift_tunnel_Salverapporter_AGOL", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/B11827_vk_e103_framdrift_tunnel_Salverapporter_AGOL/FeatureServer"
+    }, 
+    {
+      "name" : "Vegnett_firefeltvei_over_tid", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Vegnett_firefeltvei_over_tid/FeatureServer"
+    }, 
+    {
+      "name" : "feilfjerning_fortausobjekt_ikke_ERF_vegsystem", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/feilfjerning_fortausobjekt_ikke_ERF_vegsystem/FeatureServer"
+    }, 
+    {
+      "name" : "Analyse_fortau_ikkeERF_uttrekkstidspunkt", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Analyse_fortau_ikkeERF_uttrekkstidspunkt/FeatureServer"
+    }, 
+    {
+      "name" : "fylker_uten_fortau_ERF_problemer", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/fylker_uten_fortau_ERF_problemer/FeatureServer"
+    }, 
+    {
+      "name" : "FAS_Senterlinjer", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/FAS_Senterlinjer/FeatureServer"
+    }, 
+    {
+      "name" : "Møtefri_veg", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Møtefri_veg/FeatureServer"
+    }, 
+    {
+      "name" : "Driftskontrakt_mangler", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Driftskontrakt_mangler/FeatureServer"
+    }, 
+    {
+      "name" : "status_kommunevis_fortau", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/status_kommunevis_fortau/FeatureServer"
+    }, 
+    {
+      "name" : "status_kommunevis_fortau_IKKE_ERF", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/status_kommunevis_fortau_IKKE_ERF/FeatureServer"
+    }, 
+    {
+      "name" : "Faunapassasje_20250508", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Faunapassasje_20250508/FeatureServer"
+    }, 
+    {
+      "name" : "Fysisk_inngrep_i_vannforekomst_20250508", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Fysisk_inngrep_i_vannforekomst_20250508/FeatureServer"
+    }, 
+    {
+      "name" : "feilfjerning_driftskontrakt", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/feilfjerning_driftskontrakt/FeatureServer"
+    }, 
+    {
+      "name" : "analyseresultat_driftsklasse_etter_feilfjerning", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/analyseresultat_driftsklasse_etter_feilfjerning/FeatureServer"
+    }, 
+    {
+      "name" : "havflate_Ramfjord", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/havflate_Ramfjord/FeatureServer"
+    }, 
+    {
+      "name" : "DDA10_Hjorteviltpåkjørsler_HjorteviltpåkjørslerAvMotorkjøretøy", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/DDA10_Hjorteviltpåkjørsler_HjorteviltpåkjørslerAvMotorkjøretøy/FeatureServer"
+    }, 
+    {
+      "name" : "Døgnhvileplasser_DB", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Døgnhvileplasser_DB/FeatureServer"
+    }, 
+    {
+      "name" : "Personskadeulykke_med_dyr_innblandet_DDA10_Hjortepåkjørsler", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Personskadeulykke_med_dyr_innblandet_DDA10_Hjortepåkjørsler/FeatureServer"
+    }, 
+    {
+      "name" : "C_DK9304_Bergen_2026_2031_250625", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/C_DK9304_Bergen_2026_2031_250625/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_4cf6d671132d441696cc1fd9966218ce", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_4cf6d671132d441696cc1fd9966218ce/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_4cf6d671132d441696cc1fd9966218ce_form", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_4cf6d671132d441696cc1fd9966218ce_form/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_4cf6d671132d441696cc1fd9966218ce_results", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_4cf6d671132d441696cc1fd9966218ce_results/FeatureServer"
+    }, 
+    {
+      "name" : "B12315_Strynefjellet_med_arm_til_Geiranger_visning_Publikum", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/B12315_Strynefjellet_med_arm_til_Geiranger_visning_Publikum/FeatureServer"
+    }, 
+    {
+      "name" : "B12315_Strynefjellet_med_arm_til_Geiranger_visning_Saksbehandler", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/B12315_Strynefjellet_med_arm_til_Geiranger_visning_Saksbehandler/FeatureServer"
+    }, 
+    {
+      "name" : "B12315_Strynefjellet_planavgrensning", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/B12315_Strynefjellet_planavgrensning/FeatureServer"
+    }, 
+    {
+      "name" : "f_veg_b12164R01_v3", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/f_veg_b12164R01_v3/FeatureServer"
+    }, 
+    {
+      "name" : "f_veg_b12164R01_v3", 
+      "type" : "SceneServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/f_veg_b12164R01_v3/SceneServer"
+    }, 
+    {
+      "name" : "B12315_Planavgrensning_aug25", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/B12315_Planavgrensning_aug25/FeatureServer"
+    }, 
+    {
+      "name" : "Rigg_og_marksikringsplan_data", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Rigg_og_marksikringsplan_data/FeatureServer"
+    }, 
+    {
+      "name" : "Reguleringsplan_og_R700", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Reguleringsplan_og_R700/FeatureServer"
+    }, 
+    {
+      "name" : "Arcgis_online", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Arcgis_online/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_6e003884cf054ce6a9adb3fea2ae6d55", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_6e003884cf054ce6a9adb3fea2ae6d55/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_6e003884cf054ce6a9adb3fea2ae6d55_form", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_6e003884cf054ce6a9adb3fea2ae6d55_form/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_6e003884cf054ce6a9adb3fea2ae6d55_results", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_6e003884cf054ce6a9adb3fea2ae6d55_results/FeatureServer"
+    }, 
+    {
+      "name" : "C15883_Planoppstart_rv15_Graffer_Lom_3_visning", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/C15883_Planoppstart_rv15_Graffer_Lom_3_visning/FeatureServer"
+    }, 
+    {
+      "name" : "C15883_rv15_GrafferLom_MIME", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/C15883_rv15_GrafferLom_MIME/FeatureServer"
+    }, 
+    {
+      "name" : "Arealformål", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Arealformål/FeatureServer"
+    }, 
+    {
+      "name" : "Hensynssoner", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Hensynssoner/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_d4f0d072fa9a4a4d845bd46873f08ded_form", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_d4f0d072fa9a4a4d845bd46873f08ded_form/FeatureServer"
+    }, 
+    {
+      "name" : "Driftsontrakt_Riksveg_2023_20231010", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Driftsontrakt_Riksveg_2023_20231010/FeatureServer"
+    }, 
+    {
+      "name" : "C15883_Planoppstart_publikumslag_2", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/C15883_Planoppstart_publikumslag_2/FeatureServer"
+    }, 
+    {
+      "name" : "Driftskontrakter_Fylkesveg_2025", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Driftskontrakter_Fylkesveg_2025/FeatureServer"
+    }, 
+    {
+      "name" : "Krysningsmulighet_åpning_motorveg", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Krysningsmulighet_åpning_motorveg/FeatureServer"
+    }, 
+    {
+      "name" : "Motorveg", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Motorveg/FeatureServer"
+    }, 
+    {
+      "name" : "Nvdb_rekkverk_på_motorveger", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Nvdb_rekkverk_på_motorveger/FeatureServer"
+    }, 
+    {
+      "name" : "Kontraktsomrade_Nye_Veier", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Kontraktsomrade_Nye_Veier/FeatureServer"
+    }, 
+    {
+      "name" : "Kontrakt_Riksv_2024", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Kontrakt_Riksv_2024/FeatureServer"
+    }, 
+    {
+      "name" : "ERF_Skadegrad_NVE", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/ERF_Skadegrad_NVE/FeatureServer"
+    }, 
+    {
+      "name" : "ERF_SVV_Kvikkleire", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/ERF_SVV_Kvikkleire/FeatureServer"
+    }, 
+    {
+      "name" : "ERF_Kikkleirepunkt", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/ERF_Kikkleirepunkt/FeatureServer"
+    }, 
+    {
+      "name" : "Borpunkt_mKvikkleirepåvisning_NADAG", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Borpunkt_mKvikkleirepåvisning_NADAG/FeatureServer"
+    }, 
+    {
+      "name" : "modell_polygon_v01", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/modell_polygon_v01/FeatureServer"
+    }, 
+    {
+      "name" : "modell_polygon_v02", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/modell_polygon_v02/FeatureServer"
+    }, 
+    {
+      "name" : "Mikroområde_Aimsun_Kristiansand", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Mikroområde_Aimsun_Kristiansand/FeatureServer"
+    }, 
+    {
+      "name" : "Kontinuerlige_tellepunkter", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Kontinuerlige_tellepunkter/FeatureServer"
+    }, 
+    {
+      "name" : "feilfjerning_ERF_fartsgrenser", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/feilfjerning_ERF_fartsgrenser/FeatureServer"
+    }, 
+    {
+      "name" : "skiltplater_OK_vegsystemreferanse", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/skiltplater_OK_vegsystemreferanse/FeatureServer"
+    }, 
+    {
+      "name" : "Kontrakt_Elektro_2025", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Kontrakt_Elektro_2025/FeatureServer"
+    }, 
+    {
+      "name" : "Overgang_Sykkel_Transport", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Overgang_Sykkel_Transport/FeatureServer"
+    }, 
+    {
+      "name" : "DCA40_Byvekst_Fordelingsvirkninger", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/DCA40_Byvekst_Fordelingsvirkninger/FeatureServer"
+    }, 
+    {
+      "name" : "DCA40_Byvekst_Kommuneflater_SSB", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/DCA40_Byvekst_Kommuneflater_SSB/FeatureServer"
+    }, 
+    {
+      "name" : "DCA40_Byvekst_Trafikkarbeid_avtaleomraader", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/DCA40_Byvekst_Trafikkarbeid_avtaleomraader/FeatureServer"
+    }, 
+    {
+      "name" : "DCA40_Byvekst_Parkering_byvekst_tettsted", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/DCA40_Byvekst_Parkering_byvekst_tettsted/FeatureServer"
+    }, 
+    {
+      "name" : "DCA40_Byvekst_Arealutvikling", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/DCA40_Byvekst_Arealutvikling/FeatureServer"
+    }, 
+    {
+      "name" : "Oversikt_vaerstasjoner", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Oversikt_vaerstasjoner/FeatureServer"
+    }, 
+    {
+      "name" : "Rigg_og_marksikringsplan_data_Reguleringsplanavgrensing", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Rigg_og_marksikringsplan_data_Reguleringsplanavgrensing/FeatureServer"
+    }, 
+    {
+      "name" : "Skisserte_anleggsveger", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Skisserte_anleggsveger/FeatureServer"
+    }, 
+    {
+      "name" : "9104_Oslo_Gardermoen_2026_2031", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/9104_Oslo_Gardermoen_2026_2031/FeatureServer"
+    }, 
+    {
+      "name" : "Veg_mKvikkleire_Faregrad_ADT_2025", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Veg_mKvikkleire_Faregrad_ADT_2025/FeatureServer"
+    }, 
+    {
+      "name" : "B12315_KVU_punkter", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/B12315_KVU_punkter/FeatureServer"
+    }, 
+    {
+      "name" : "B12315_interne_punkter", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/B12315_interne_punkter/FeatureServer"
+    }, 
+    {
+      "name" : "B12315_masselagergrense_j9a417633c1ff47d4a02094625a295521", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/B12315_masselagergrense_j9a417633c1ff47d4a02094625a295521/FeatureServer"
+    }, 
+    {
+      "name" : "TransportNorth_Regions", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/TransportNorth_Regions/FeatureServer"
+    }, 
+    {
+      "name" : "TransportNorth_Corrodors", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/TransportNorth_Corrodors/FeatureServer"
+    }, 
+    {
+      "name" : "NTP_Sweden", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NTP_Sweden/FeatureServer"
+    }, 
+    {
+      "name" : "PN_Ferry__Umeå_Vaasa_", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/PN_Ferry__Umeå_Vaasa_/FeatureServer"
+    }, 
+    {
+      "name" : "PN_Corridors", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/PN_Corridors/FeatureServer"
+    }, 
+    {
+      "name" : "TENT_Road_PlatformNorth", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/TENT_Road_PlatformNorth/FeatureServer"
+    }, 
+    {
+      "name" : "NTP_Norway", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NTP_Norway/FeatureServer"
+    }, 
+    {
+      "name" : "NTP_Finland", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NTP_Finland/FeatureServer"
+    }, 
+    {
+      "name" : "Population", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Population/FeatureServer"
+    }, 
+    {
+      "name" : "PN_Corridor_Places", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/PN_Corridor_Places/FeatureServer"
+    }, 
+    {
+      "name" : "NADAG_uNVE", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NADAG_uNVE/FeatureServer"
+    }, 
+    {
+      "name" : "NTP_Projects", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NTP_Projects/FeatureServer"
+    }, 
+    {
+      "name" : "TENT_Rails_PN", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/TENT_Rails_PN/FeatureServer"
+    }, 
+    {
+      "name" : "N50_Havflate_mStrandsone_SVV", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/N50_Havflate_mStrandsone_SVV/FeatureServer"
+    }, 
+    {
+      "name" : "NVE_Kvikkleire_20211112_mStrandsone", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/NVE_Kvikkleire_20211112_mStrandsone/FeatureServer"
+    }, 
+    {
+      "name" : "SVV_Kvikkleire_mStrandsone", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/SVV_Kvikkleire_mStrandsone/FeatureServer"
+    }, 
+    {
+      "name" : "N50_Havflate_mStrandsone_NVE", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/N50_Havflate_mStrandsone_NVE/FeatureServer"
+    }, 
+    {
+      "name" : "E39B_BF_veglinjer_vegmodell_alt2_20250319", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/E39B_BF_veglinjer_vegmodell_alt2_20250319/FeatureServer"
+    }, 
+    {
+      "name" : "E39B_BF_veglinjer_vegmodell_alt1_20260205", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/E39B_BF_veglinjer_vegmodell_alt1_20260205/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_ab3fdc17f0a94474875612e9d3291c07", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_ab3fdc17f0a94474875612e9d3291c07/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_ab3fdc17f0a94474875612e9d3291c07_form", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_ab3fdc17f0a94474875612e9d3291c07_form/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_ab3fdc17f0a94474875612e9d3291c07_results", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_ab3fdc17f0a94474875612e9d3291c07_results/FeatureServer"
+    }, 
+    {
+      "name" : "rv4sinsenkrysset_allebilder", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/rv4sinsenkrysset_allebilder/FeatureServer"
+    }, 
+    {
+      "name" : "FAS_meldingstjeneste_publikumslag", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/FAS_meldingstjeneste_publikumslag/FeatureServer"
+    }, 
+    {
+      "name" : "FAS_meldingstjeneste_MIME", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/FAS_meldingstjeneste_MIME/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_890f3e121e47445185193ba15ec37a20", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_890f3e121e47445185193ba15ec37a20/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_890f3e121e47445185193ba15ec37a20_results", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_890f3e121e47445185193ba15ec37a20_results/FeatureServer"
+    }, 
+    {
+      "name" : "Bxxxxxxx_TestMedvirkning_Mime", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Bxxxxxxx_TestMedvirkning_Mime/FeatureServer"
+    }, 
+    {
+      "name" : "Ladestasjoner_Tunge_Feb26", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Ladestasjoner_Tunge_Feb26/FeatureServer"
+    }, 
+    {
+      "name" : "Bxxxxxxx_TestMedvirkning_Publikum", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Bxxxxxxx_TestMedvirkning_Publikum/FeatureServer"
+    }, 
+    {
+      "name" : "Kontrollplass_20260302", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Kontrollplass_20260302/FeatureServer"
+    }, 
+    {
+      "name" : "04_Prosjekter_Gjennomforingsplan_offentlig_2026", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/04_Prosjekter_Gjennomforingsplan_offentlig_2026/FeatureServer"
+    }, 
+    {
+      "name" : "E18_Askim_Mysen_alle_bilder", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/E18_Askim_Mysen_alle_bilder/FeatureServer"
+    }, 
+    {
+      "name" : "nvdb_geometri_kontroll", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/nvdb_geometri_kontroll/FeatureServer"
+    }, 
+    {
+      "name" : "SVV_MIL_CR26_Excercise_Excemption_Transport_WFL1", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/SVV_MIL_CR26_Excercise_Excemption_Transport_WFL1/FeatureServer"
+    }, 
+    {
+      "name" : "Hogst", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Hogst/FeatureServer"
+    }, 
+    {
+      "name" : "CCA00_Dekkeleggingstiltak_Riksveg_2026", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/CCA00_Dekkeleggingstiltak_Riksveg_2026/FeatureServer"
+    }, 
+    {
+      "name" : "Manglende_typeveg_gs_ved_522_OK", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Manglende_typeveg_gs_ved_522_OK/FeatureServer"
+    }, 
+    {
+      "name" : "manglende_typeveg_gs_ved_522_skiltplate", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/manglende_typeveg_gs_ved_522_skiltplate/FeatureServer"
+    }, 
+    {
+      "name" : "uttrekkstidspunkt_manglende_typeveg_gsv_522_konsistenskontroll_fartsgrense", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/uttrekkstidspunkt_manglende_typeveg_gsv_522_konsistenskontroll_fartsgrense/FeatureServer"
+    }, 
+    {
+      "name" : "OK_skiltplater_ID_522", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/OK_skiltplater_ID_522/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_e8420bcdf47d4550af13c7b13a6f8e95", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_e8420bcdf47d4550af13c7b13a6f8e95/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_e8420bcdf47d4550af13c7b13a6f8e95_form", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_e8420bcdf47d4550af13c7b13a6f8e95_form/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_e8420bcdf47d4550af13c7b13a6f8e95_results", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_e8420bcdf47d4550af13c7b13a6f8e95_results/FeatureServer"
+    }, 
+    {
+      "name" : "Multimodal_point", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Multimodal_point/FeatureServer"
+    }, 
+    {
+      "name" : "Fartsindikator_v3", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Fartsindikator_v3/FeatureServer"
+    }, 
+    {
+      "name" : "E39_Stormyra_bilder", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/E39_Stormyra_bilder/FeatureServer"
+    }, 
+    {
+      "name" : "Gartnerlokka_allebilder", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Gartnerlokka_allebilder/FeatureServer"
+    }, 
+    {
+      "name" : "B11930_-_Varslingsområde_18.05.26", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/B11930_-_Varslingsområde_18.05.26/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_9d773b2ca5b64928b68780c463033e1a_results", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_9d773b2ca5b64928b68780c463033e1a_results/FeatureServer"
+    }, 
+    {
+      "name" : "DDA10_Hjorteviltpåkjørsler_VegsystemMai2025", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/DDA10_Hjorteviltpåkjørsler_VegsystemMai2025/FeatureServer"
+    }, 
+    {
+      "name" : "SVV_MIL_Funksjonell_Vegklasse", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/SVV_MIL_Funksjonell_Vegklasse/FeatureServer"
+    }, 
+    {
+      "name" : "DDA10_Hjorteviltpåkjørsler_FartsgrenseMai2025", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/DDA10_Hjorteviltpåkjørsler_FartsgrenseMai2025/FeatureServer"
+    }, 
+    {
+      "name" : "DDA10_Hjorteviltpåkjørsler_TrafikkmengdeMai2025", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/DDA10_Hjorteviltpåkjørsler_TrafikkmengdeMai2025/FeatureServer"
+    }, 
+    {
+      "name" : "DDA10_Hjorteviltpåkjørsler_Viltfare_mai_2025", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/DDA10_Hjorteviltpåkjørsler_Viltfare_mai_2025/FeatureServer"
+    }, 
+    {
+      "name" : "Viltgjerde_DDA10_Hjortepåkjørsler", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Viltgjerde_DDA10_Hjortepåkjørsler/FeatureServer"
+    }, 
+    {
+      "name" : "Terrestrisk_faunapassasje_DDA10_Hjortepåkjørsler", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Terrestrisk_faunapassasje_DDA10_Hjortepåkjørsler/FeatureServer"
+    }, 
+    {
+      "name" : "Kantklippareal_DDA10_Hjortepåkjørsler", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Kantklippareal_DDA10_Hjortepåkjørsler/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_654e3a7dd9da4a9da079cf0e6d11d25d", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_654e3a7dd9da4a9da079cf0e6d11d25d/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_654e3a7dd9da4a9da079cf0e6d11d25d_form", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_654e3a7dd9da4a9da079cf0e6d11d25d_form/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_654e3a7dd9da4a9da079cf0e6d11d25d_results", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_654e3a7dd9da4a9da079cf0e6d11d25d_results/FeatureServer"
+    }, 
+    {
+      "name" : "B11930_v2_MIME_R4_Samsmoveien_Jevnaker_kommune", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/B11930_v2_MIME_R4_Samsmoveien_Jevnaker_kommune/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_c0e86cf26e5341bb9e3aa8beb2e45c6d", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_c0e86cf26e5341bb9e3aa8beb2e45c6d/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_c0e86cf26e5341bb9e3aa8beb2e45c6d_form", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_c0e86cf26e5341bb9e3aa8beb2e45c6d_form/FeatureServer"
+    }, 
+    {
+      "name" : "survey123_c0e86cf26e5341bb9e3aa8beb2e45c6d_results", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/survey123_c0e86cf26e5341bb9e3aa8beb2e45c6d_results/FeatureServer"
+    }, 
+    {
+      "name" : "OPS Hålogalandsveien Kart nybygget vei", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/OPS Hålogalandsveien Kart nybygget vei/FeatureServer"
+    }, 
+    {
+      "name" : "OPS Hålogalandsveien Kart omklassifisert vei", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/OPS Hålogalandsveien Kart omklassifisert vei/FeatureServer"
+    }, 
+    {
+      "name" : "Multimodal_point_Norway", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Multimodal_point_Norway/FeatureServer"
+    }, 
+    {
+      "name" : "Skiltplate_DDA10_Hjortepåkjørsler", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Skiltplate_DDA10_Hjortepåkjørsler/FeatureServer"
+    }, 
+    {
+      "name" : "DDA10_Hjortepåkjørsler", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/DDA10_Hjortepåkjørsler/FeatureServer"
+    }, 
+    {
+      "name" : "E16_Nymoen-Eggemoen_R1_E16_26_166602", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/E16_Nymoen-Eggemoen_R1_E16_26_166602/FeatureServer"
+    }, 
+    {
+      "name" : "E16_Nymoen-Eggemoen_R2_Almebakken–Risesletta__26_166608", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/E16_Nymoen-Eggemoen_R2_Almebakken–Risesletta__26_166608/FeatureServer"
+    }, 
+    {
+      "name" : "E16_Nymoen-Eggemoen_R3_Austjord–Nærstad_26_166612", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/E16_Nymoen-Eggemoen_R3_Austjord–Nærstad_26_166612/FeatureServer"
+    }, 
+    {
+      "name" : "E16_Nymoen-Eggemoen_R4_Samsmoveien_–_Jevnaker_kommune_26_166616", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/E16_Nymoen-Eggemoen_R4_Samsmoveien_–_Jevnaker_kommune_26_166616/FeatureServer"
+    }, 
+    {
+      "name" : "B11667_f_stoy", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/B11667_f_stoy/FeatureServer"
+    }, 
+    {
+      "name" : "B11667_f_veg", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/B11667_f_veg/FeatureServer"
+    }, 
+    {
+      "name" : "B11667_f_dren", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/B11667_f_dren/FeatureServer"
+    }, 
+    {
+      "name" : "B11667_f_skred", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/B11667_f_skred/FeatureServer"
+    }, 
+    {
+      "name" : "Kulturminner_Kilpollen", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Kulturminner_Kilpollen/FeatureServer"
+    }, 
+    {
+      "name" : "VegmodelllerNappØloknelvaUTM33", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/VegmodelllerNappØloknelvaUTM33/FeatureServer"
+    }, 
+    {
+      "name" : "Vegmodelller_Napp_Øloknelva_UTM33_alternativ4", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Vegmodelller_Napp_Øloknelva_UTM33_alternativ4/FeatureServer"
+    }, 
+    {
+      "name" : "Merknader_til_E39_Ådland-Svegatjørn_MIME", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Merknader_til_E39_Ådland-Svegatjørn_MIME/FeatureServer"
+    }, 
+    {
+      "name" : "E39_SO___Adresse_og_gnrbnr_søk", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/E39_SO___Adresse_og_gnrbnr_søk/FeatureServer"
+    }, 
+    {
+      "name" : "E39_SO_-_Illustrasjoner", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/E39_SO_-_Illustrasjoner/FeatureServer"
+    }, 
+    {
+      "name" : "KU_E10_Flakstadpollen_Alternativ_4", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/KU_E10_Flakstadpollen_Alternativ_4/FeatureServer"
+    }, 
+    {
+      "name" : "Fartsindikator_v2", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Fartsindikator_v2/FeatureServer"
+    }, 
+    {
+      "name" : "Byindikator_trafikk", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Byindikator_trafikk/FeatureServer"
+    }, 
+    {
+      "name" : "Konsistenskontroll_vegnett", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Konsistenskontroll_vegnett/FeatureServer"
+    }, 
+    {
+      "name" : "Vegmodell_33", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Vegmodell_33/FeatureServer"
+    }, 
+    {
+      "name" : "Vegmodell_33", 
+      "type" : "SceneServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Vegmodell_33/SceneServer"
+    }, 
+    {
+      "name" : "Nordlandsporten", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Nordlandsporten/FeatureServer"
+    }, 
+    {
+      "name" : "Nordlandsporten", 
+      "type" : "SceneServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Nordlandsporten/SceneServer"
+    }, 
+    {
+      "name" : "Bygninger_Mellingsmoen", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Bygninger_Mellingsmoen/FeatureServer"
+    }, 
+    {
+      "name" : "Bygninger_Mellingsmoen", 
+      "type" : "SceneServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Bygninger_Mellingsmoen/SceneServer"
+    }, 
+    {
+      "name" : "Reguleringsplan", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Reguleringsplan/FeatureServer"
+    }, 
+    {
+      "name" : "E6_Nordland", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/E6_Nordland/FeatureServer"
+    }, 
+    {
+      "name" : "B12025_veglinje_Lilla", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/B12025_veglinje_Lilla/FeatureServer"
+    }, 
+    {
+      "name" : "Brudekke", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Brudekke/FeatureServer"
+    }, 
+    {
+      "name" : "Brudekke", 
+      "type" : "SceneServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Brudekke/SceneServer"
+    }, 
+    {
+      "name" : "B12025_E6_Mellingsmoen_Naturresurser", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/B12025_E6_Mellingsmoen_Naturresurser/FeatureServer"
+    }, 
+    {
+      "name" : "B12025_E6_Mellingsmoen_Landskap", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/B12025_E6_Mellingsmoen_Landskap/FeatureServer"
+    }, 
+    {
+      "name" : "B12025_E6_Mellingsmoen_Naturmangfold", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/B12025_E6_Mellingsmoen_Naturmangfold/FeatureServer"
+    }, 
+    {
+      "name" : "B12025_E6_Mellingsmoen_Friluftsliv", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/B12025_E6_Mellingsmoen_Friluftsliv/FeatureServer"
+    }, 
+    {
+      "name" : "B12025_E6_Mellingsmoen_Naturmangfold_Skog", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/B12025_E6_Mellingsmoen_Naturmangfold_Skog/FeatureServer"
+    }, 
+    {
+      "name" : "B12025_E6_Mellingsmoen_Kulturarv", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/B12025_E6_Mellingsmoen_Kulturarv/FeatureServer"
+    }, 
+    {
+      "name" : "T_Geom_Rød", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/T_Geom_Rød/FeatureServer"
+    }, 
+    {
+      "name" : "T_Geom_Grønn", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/T_Geom_Grønn/FeatureServer"
+    }, 
+    {
+      "name" : "T_Geom_17500", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/T_Geom_17500/FeatureServer"
+    }, 
+    {
+      "name" : "Regplan_Hele", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Regplan_Hele/FeatureServer"
+    }, 
+    {
+      "name" : "Driftskontrakt_Riksveg_Flate_2026", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Driftskontrakt_Riksveg_Flate_2026/FeatureServer"
+    }, 
+    {
+      "name" : "Driftskontrakt_Riksveg_2026", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Driftskontrakt_Riksveg_2026/FeatureServer"
+    }, 
+    {
+      "name" : "Kontrakt_Riksveg_2026", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Kontrakt_Riksveg_2026/FeatureServer"
+    }, 
+    {
+      "name" : "B12286_E39_Storehaugen_-_Førde_Mime", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/B12286_E39_Storehaugen_-_Førde_Mime/FeatureServer"
+    }, 
+    {
+      "name" : "ForventetSkadekost_2016_2021", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/ForventetSkadekost_2016_2021/FeatureServer"
+    }, 
+    {
+      "name" : "Kontrakt_Elektro_2026", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/Kontrakt_Elektro_2026/FeatureServer"
+    }, 
+    {
+      "name" : "GSV_KT_Holmenveiein_Dalsveien_alle_bilder", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/GSV_KT_Holmenveiein_Dalsveien_alle_bilder/FeatureServer"
+    }, 
+    {
+      "name" : "B12286_E39StorehaugenFørde_Planavgrensing", 
+      "type" : "FeatureServer", 
+      "url" : "https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/services/B12286_E39StorehaugenFørde_Planavgrensing/FeatureServer"
+    }
+  ]
+}
