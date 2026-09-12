@@ -418,6 +418,8 @@ legend.onAdd = () => { const d = L.DomUtil.create('div','legend');
 legend.addTo(map);
 
 apply();
+// Tegn kartet på nytt når panelet endrer størrelse (innbygging, mobil, vindu)
+new ResizeObserver(() => map.invalidateSize()).observe(document.getElementById("map"));
 </script>
 </body>
 </html>
