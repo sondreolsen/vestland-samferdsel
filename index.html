@@ -289,8 +289,13 @@ const map = L.map('map', {zoomControl:true, preferCanvas:false});
 const topo = L.tileLayer('https://cache.kartverket.no/v1/wmts/1.0.0/topo/default/webmercator/{z}/{y}/{x}.png', {maxZoom:18, attribution:'© Kartverket'});
 const graa = L.tileLayer('https://cache.kartverket.no/v1/wmts/1.0.0/topograatone/default/webmercator/{z}/{y}/{x}.png', {maxZoom:18, attribution:'© Kartverket'});
 const osm  = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom:19, attribution:'© OpenStreetMap-bidragsytere'});
-graa.addTo(map);
-L.control.layers({'Kartverket gråtone':graa,'Kartverket topografisk':topo,'OpenStreetMap':osm}, null, {position:'topright', collapsed:true}).addTo(map);
+const voyager = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {maxZoom:19, subdomains:'abcd', attribution:'© OpenStreetMap-bidragsytere, © CARTO'});
+const sat = L.layerGroup([
+  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {maxZoom:18, attribution:'Esri, Maxar, Earthstar Geographics'}),
+  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}', {maxZoom:18, opacity:.9})
+]);
+voyager.addTo(map);
+L.control.layers({'Kart (Carto Voyager)':voyager,'Satellitt (Esri)':sat,'Kartverket topografisk':topo,'Kartverket gråtone':graa,'OpenStreetMap':osm}, null, {position:'topright', collapsed:false}).addTo(map);
 
 // Fylkesgrenser
 const vest = L.geoJSON(window.FYLKE.vestland, {style:{color:'#156082', weight:2, opacity:.8, fill:true, fillColor:'#156082', fillOpacity:.03, interactive:false}}).addTo(map);
@@ -302,9 +307,11 @@ let active = null;
 
 function styleFor(p, hi){
   const st = STATUS[p.status], k = KAT[p.kat];
-  return {color:k.color, weight: hi ? 7 : (p.status==='bygging'||p.status==='ntp1' ? 5 : 4), opacity: hi ? 1 : .9, dashArray: st.dash, lineCap: st.dash ? 'butt' : 'round', lineJoin:'round'};
+  return {color:k.color, weight: hi ? 11 : (p.status==='bygging'||p.status==='ntp1' ? 8 : 7), opacity: hi ? 1 : .95, dashArray: st.dash ? st.dash.split(',').map(v=>Math.round(v*1.6)).join(',') : null, lineCap: st.dash ? 'butt' : 'round', lineJoin:'round'};
 }
-function haloFor(hi){ return {color:'#fff', weight: hi ? 11 : 8, opacity:.9, lineCap:'round', lineJoin:'round', interactive:false}; }
+function haloFor(hi){ return {color:'#fff', weight: hi ? 16 : 13, opacity:.95, lineCap:'round', lineJoin:'round', interactive:false}; }
+// Bred, usynlig klikkflate rundt hver linje
+const HIT = {color:'#000', opacity:0, weight:34, lineCap:'round', lineJoin:'round', interactive:true, className:'hit'};
 
 PROJECTS.forEach(p => {
   const fg = L.featureGroup();
@@ -315,14 +322,19 @@ PROJECTS.forEach(p => {
     } else {
       const isRail = gk === 'arna_bane';
       L.geoJSON(g, {style: haloFor(false)}).addTo(fg);
-      const s = styleFor(p,false); if (isRail) { s.color = KAT.bane.color; s.dashArray = null; s.weight = 3; } else if (p.id==='arna') { s.color = KAT.veg.color; }
+      const s = styleFor(p,false); if (isRail) { s.color = KAT.bane.color; s.dashArray = null; s.weight = 4; } else if (p.id==='arna') { s.color = KAT.veg.color; }
       L.geoJSON(g, {style:s}).addTo(fg);
     }
   });
-  fg.eachLayer(l => l.eachLayer ? l.eachLayer(x => { x.on('click', e => { L.DomEvent.stop(e); select(p.id, false); }); x.bindTooltip(p.navn, {sticky:true}); }) : null);
+  // Klikkflate legges øverst i gruppa
+  p.geo.forEach(gk => { const g = window.PROJ_GEO[gk]; if (g && g.type !== 'MultiPolygon' && g.type !== 'Polygon') L.geoJSON(g, {style: HIT}).addTo(fg); });
+  fg.eachLayer(l => l.eachLayer ? l.eachLayer(x => { x.on('click', e => { L.DomEvent.stop(e); select(p.id, false); }); x.on('mouseover', () => { if (active!==p.id) setHighlight(p.id, true); }); x.on('mouseout', () => { if (active!==p.id) setHighlight(p.id, false); }); x.bindTooltip(p.navn, {sticky:true}); }) : null);
   fg.addTo(map);
   layers[p.id] = fg;
 });
+// Klikkflatene til alle prosjekter over alle linjer, så nabolinjer ikke skjuler dem
+function hitsToFront(){ Object.values(layers).forEach(fg => fg.eachLayer(gj => gj.eachLayer && gj.eachLayer(x => { if (x.options.className==='hit' && x.bringToFront) x.bringToFront(); }))); }
+hitsToFront();
 
 function setHighlight(id, on){
   const p = PROJECTS.find(x=>x.id===id); const fg = layers[id];
@@ -330,11 +342,12 @@ function setHighlight(id, on){
     if (!x.setStyle) return;
     const o = x.options;
     if (o.fillOpacity !== undefined && o.fill !== false && o.weight <= 1.5) { x.setStyle({fillOpacity: on ? .4 : .25}); return; }
+    if (o.className === 'hit') return;
     if (o.color === '#fff') { x.setStyle(haloFor(on)); return; }
-    const s = styleFor(p,on); if (o.color === KAT.bane.color && p.id==='arna') { s.color = KAT.bane.color; s.dashArray=null; s.weight = on ? 5 : 3; } else if (p.id==='arna') { s.color = KAT.veg.color; }
+    const s = styleFor(p,on); if (o.color === KAT.bane.color && p.id==='arna') { s.color = KAT.bane.color; s.dashArray=null; s.weight = on ? 6 : 4; } else if (p.id==='arna') { s.color = KAT.veg.color; }
     x.setStyle(s);
   }));
-  if (on) fg.bringToFront();
+  if (on) { fg.bringToFront(); hitsToFront(); }
 }
 
 // ------------------------------------------------------------------
