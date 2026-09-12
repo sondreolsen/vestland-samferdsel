@@ -175,10 +175,10 @@
       </div>
       <div class="listhead">
         <h2 id="listTitle">Prosjekter</h2>
-        <label class="sort">Sorter: <select id="sort"><option value="prio">Prioritet</option><option value="kost">Kostnad</option><option value="navn">Navn</option></select></label>
+        <label class="sort">Sorter: <select id="sort"><option value="prio">Prioritet</option><option value="kost">Kostnad</option><option value="adt">Trafikkmengde</option><option value="navn">Navn</option></select></label>
       </div>
       <div id="list"></div>
-      <div class="foot">Geometri: Statens vegvesen (ArcGIS), OpenStreetMap og egne skisser. Tall: NTP 2025–2036, stortingsproposisjoner, Statens vegvesen, Kystverket. Prisår står ved hvert tall. Sist oppdatert september 2026.</div>
+      <div class="foot">Geometri: Statens vegvesen (ArcGIS), OpenStreetMap og egne skisser. Tall: NTP 2025–2036, stortingsproposisjoner, Statens vegvesen, Kystverket. Prisår står ved hvert tall. Trafikkmengde hentes direkte fra <a href="https://nvdbapiles.atlas.vegvesen.no/dokumentasjon/" target="_blank" rel="noopener">Statens vegvesens vegdatabank (NVDB)</a>. Sist oppdatert september 2026.</div>
     </div>
   </aside>
   <div id="mapwrap">
@@ -233,6 +233,79 @@ const KORT = {
 };
 
 <!--PROJECTS-->
+
+// ------------------------------------------------------------------
+// Trafikkmengde (ÅDT) fra Statens vegvesens vegdatabank, NVDB API v4.
+// Vegobjekttype 540 «Trafikkmengde»: 4623 ÅDT total, 4624 andel lange, 4621 år.
+// ------------------------------------------------------------------
+const NVDB_URL = 'https://nvdbapiles.atlas.vegvesen.no/vegobjekter/540';
+const ADT_BUF = 0.02;            // ca 1–2 km buffer rundt traséen
+// Vegnummer det skal måles på. Prosjekt uten oppføring har ingen veg (Stad skipstunnel).
+const ADT_REF = {
+  hordfast:'EV39', bokn:'EV39', gullkista:'EV39', arna:'EV16', vagsbotn:'EV39', fjosanger:'EV39',
+  bybanen:'EV39', floyfjell:'EV39', sotra:'RV555', storehaugen:'EV39', vikafjellet:'RV13',
+  erdal:'RV5', bogstunnelen:'EV39', roldal:'EV134', hylland:'EV16', klakegg:'EV39',
+  strynefjellet:'RV15', byrkjelo_grodas:'EV39',
+};
+// Hvilken geometri utsnittet regnes fra, når prosjektet har flere lag
+const ADT_GEO = {arna:['arna_veg'], bokn:['bokn'], fjosanger:['fjosanger_arna']};
+// Presisering der vegen ikke er prosjektet selv, eller tallet trenger forbehold
+const ADT_NOTE = {
+  hordfast:'Dagens E39 over Stord og gjennom Os. Ferja Sandvikvåg–Halhjem deler strekningen.',
+  bokn:'Dagens E39 mellom Bokn og Bømlafjordtunnelen. Ferja Mortavika–Arsvågen deler strekningen.',
+  arna:'Gjelder vegdelen av fellesprosjektet, altså dagens E16.',
+  bybanen:'Gjelder E39 i samme korridor gjennom Åsane, ikke bybanen selv.',
+  fjosanger:'Dagens E39 gjennom Bergen, som Ringveg øst skal avlaste.',
+  vikafjellet:'Rv 13 over Vikafjellet er ofte vinterstengt, noe som trekker årsdøgntrafikken ned.',
+  strynefjellet:'Rv 15 over Strynefjellet er vinterstengt i perioder, noe som trekker årsdøgntrafikken ned.',
+};
+const adtCache = {};
+function vegnavn(ref){ return ref.replace(/^EV/,'E').replace(/^RV/,'rv '); }
+function tall(n){ return n.toLocaleString('nb-NO'); }
+function adtBbox(id){
+  const keys = ADT_GEO[id] || PROJECTS.find(p=>p.id===id).geo;
+  let x0=999, y0=999, x1=-999, y1=-999;
+  keys.forEach(k => { const g = window.PROJ_GEO[k]; if (!g) return;
+    linesOf(g).forEach(l => l.forEach(c => { if(c[0]<x0)x0=c[0]; if(c[0]>x1)x1=c[0]; if(c[1]<y0)y0=c[1]; if(c[1]>y1)y1=c[1]; })); });
+  return [x0-ADT_BUF, y0-ADT_BUF, x1+ADT_BUF, y1+ADT_BUF].map(v=>v.toFixed(4)).join(',');
+}
+async function hentAdt(id){
+  if (adtCache[id]) return adtCache[id];
+  const ref = ADT_REF[id]; if (!ref) return (adtCache[id] = {na:true});
+  const url = `${NVDB_URL}?srid=4326&inkluder=egenskaper,lokasjon&antall=1000&kartutsnitt=${adtBbox(id)}&vegsystemreferanse=${ref}`;
+  const r = await fetch(url, {headers:{'X-Client':'vestland-samferdselskart','Accept':'application/json'}});
+  if (!r.ok) throw new Error('NVDB svarte ' + r.status);
+  const d = await r.json();
+  let sw=0, sl=0, lw=0, ll=0; const segs=[], ar={};
+  (d.objekter||[]).forEach(o => {
+    const e = {}; (o.egenskaper||[]).forEach(x => { e[x.id] = x.verdi; });
+    const vs = ((o.lokasjon||{}).vegsystemreferanser||[{}])[0].kortform || '';
+    // Bare hovedlinja: E/R-veg, delstrekning 1, uten kryssdel (KD) eller sideanlegg (SD)
+    if (!/^[ER]V\d+ S\d+D1 m[\d-]+$/.test(vs)) return;
+    const len = (o.lokasjon||{}).lengde || 0;
+    if (e[4623] == null || !len) return;
+    segs.push({adt:e[4623], len}); sw += e[4623]*len; sl += len;
+    if (e[4624] != null) { lw += e[4624]*len; ll += len; }
+    if (e[4621] != null) ar[e[4621]] = (ar[e[4621]]||0) + len;
+  });
+  if (!segs.length) return (adtCache[id] = {na:true});
+  let lange = segs.filter(s => s.len >= 1000); if (!lange.length) lange = segs;
+  lange.sort((a,b) => a.adt - b.adt);
+  const aar = Object.keys(ar).sort((a,b) => ar[b] - ar[a])[0];
+  return (adtCache[id] = {adt:Math.round(sw/sl), min:lange[0].adt, max:lange[lange.length-1].adt,
+    lange: ll ? Math.round(lw/ll) : null, km:+(sl/1000).toFixed(1), n:segs.length, ar:+aar, ref, live:true});
+}
+function adtVerdi(id){ const a = adtCache[id] || (window.ADT_FALLBACK||{})[id]; return a && !a.na ? a.adt : null; }
+function adtHtml(id, a, kilde){
+  if (!a || a.na) return `<div class="t">Trafikkmengde</div><div class="v">Ikke relevant<small>${id==='stad' ? 'Stad skipstunnel er et sjøtransportprosjekt uten årsdøgntrafikk.' : 'Ingen trafikktall funnet for strekningen.'}</small></div>`;
+  const d = [`Årsdøgntrafikk på dagens ${vegnavn(a.ref)} i korridoren, tall for ${a.ar}. Varierer mellom ${tall(a.min)} og ${tall(a.max)} langs ${tall(a.km)} km veg.`];
+  if (a.lange != null) d.push(`Andel lange kjøretøy ${a.lange} %.`);
+  if (ADT_NOTE[id]) d.push(ADT_NOTE[id]);
+  d.push(kilde==='henter' ? 'Lagret verdi, henter oppdatert tall fra Statens vegvesen …'
+       : kilde==='live'   ? 'Hentet direkte fra Statens vegvesens vegdatabank (NVDB).'
+       :                    'Lagret verdi fra NVDB. Fikk ikke kontakt med API-et nå.');
+  return `<div class="t">Trafikkmengde</div><div class="v big">${tall(a.adt)} kjøretøy/døgn<small>${d.join(' ')}</small></div>`;
+}
 
 // ------------------------------------------------------------------
 // Kart
@@ -379,7 +452,7 @@ function matches(p){
 }
 function sorted(list){
   const s = document.getElementById('sort').value;
-  return list.slice().sort((a,b) => s==='kost' ? ((KOST_MRD[b.id]??-1)-(KOST_MRD[a.id]??-1)) : s==='navn' ? a.navn.localeCompare(b.navn,'nb') : (ORDER.indexOf(a.status)-ORDER.indexOf(b.status)) || ((KOST_MRD[b.id]??-1)-(KOST_MRD[a.id]??-1)));
+  return list.slice().sort((a,b) => s==='kost' ? ((KOST_MRD[b.id]??-1)-(KOST_MRD[a.id]??-1)) : s==='adt' ? ((adtVerdi(b.id)??-1)-(adtVerdi(a.id)??-1)) : s==='navn' ? a.navn.localeCompare(b.navn,'nb') : (ORDER.indexOf(a.status)-ORDER.indexOf(b.status)) || ((KOST_MRD[b.id]??-1)-(KOST_MRD[a.id]??-1)));
 }
 function fmtMrd(v){ return v.toLocaleString('nb-NO',{maximumFractionDigits: v>=100?0:1}); }
 function apply(){
@@ -420,6 +493,7 @@ const ICON = {
   nytte:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8M14 7h7v7"/></svg>',
   status:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg>',
   geo:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2z M9 4v14 M15 6v14"/></svg>',
+  adt:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h14l-1.6-5.4A2 2 0 0 0 15.5 10h-7a2 2 0 0 0-1.9 1.6L5 17z"/><path d="M5 17v2.5M19 17v2.5M8 13.5h8"/></svg>',
 };
 function fact(ic, t, v, note, cls){ return `<div class="fact"><div class="ic">${ICON[ic]}</div><div><div class="t">${t}</div><div class="v ${cls||''}">${v||'–'}${note?`<small>${note}</small>`:''}</div></div></div>`; }
 const card = document.getElementById('card'), cardBody = document.getElementById('cardBody');
@@ -439,6 +513,7 @@ function select(id, zoom){
       ${fact('kost','Kostnad', p.kostnad, p.kostnadNote, 'big')}
       <div class="fact"><div class="ic">${ICON.fin}</div><div><div class="t">Finansiering</div><div class="v split"><div><b>${p.stat||'–'}</b><span>Statlig andel</span></div><div><b>${p.bom||'–'}</b><span>Bompenger</span></div></div>${p.finNote?`<small>${p.finNote}</small>`:''}</div></div>
       ${fact('len','Lengde', p.lengde, p.lengdeNote)}
+      <div class="fact"><div class="ic">${ICON.adt}</div><div id="adtBox">${adtHtml(p.id, (window.ADT_FALLBACK||{})[p.id], 'henter')}</div></div>
       ${fact('tid','Reisetid', p.reisetid, p.reisetidNote)}
       ${fact('nytte','Netto nytte', p.nytte, p.nytteNote)}
       <div class="fact"><div class="ic">${ICON.status}</div><div><div class="t">Status</div><div class="v"><span class="pill" style="background:${st.color}">${st.label}</span></div></div></div>
@@ -447,6 +522,11 @@ function select(id, zoom){
     ${p.kilder && p.kilder.length ? `<a class="more" href="${p.kilder[0][1]}" target="_blank" rel="noopener">Les mer om prosjektet <span aria-hidden="true">→</span></a>` : ''}
     <details class="src"><summary>Alle kilder (${p.kilder.length})</summary>${p.kilder.map(([t,u])=>`<a href="${u}" target="_blank" rel="noopener" title="${u}">${t}</a>`).join('')}</details>`;
   card.classList.add('on'); document.body.classList.add('card-open'); cardBody.scrollTop = 0;
+  // Ferske trafikktall fra Statens vegvesen. Kortet viser lagret verdi til svaret kommer.
+  const box = document.getElementById('adtBox');
+  if (ADT_REF[p.id]) hentAdt(p.id)
+    .then(a => { if (active===p.id && box.isConnected) box.innerHTML = adtHtml(p.id, a, 'live'); })
+    .catch(() => { if (active===p.id && box.isConnected) box.innerHTML = adtHtml(p.id, (window.ADT_FALLBACK||{})[p.id], 'lagret'); });
   document.querySelectorAll('.item').forEach(el => el.classList.toggle('active', el.querySelector('.n').textContent === p.navn));
 }
 function closeCard(){ if (active) setHighlight(active,false,false); active=null; card.classList.remove('on'); document.body.classList.remove('card-open'); document.querySelectorAll('.item.active').forEach(el=>el.classList.remove('active')); }

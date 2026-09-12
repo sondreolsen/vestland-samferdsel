@@ -26,6 +26,14 @@ Vossebanen Arna–Stanghelle (dobbeltspor), Bybanen til Åsane, Rv 5 Erdal–Nau
 **Skisser (omtrentlige, ingen vedtatt trasé):**
 E39 Ringveg øst Fjøsanger–Arna, Rv 15 Strynefjellet (KVU-konsept B1), tunnelen på Rv 13 Vikafjellet (Hola–Bøadalen).
 
+## Trafikkmengde (ÅDT)
+
+Kartet henter årsdøgntrafikk direkte fra Statens vegvesens vegdatabank NVDB, API v4, vegobjekttype 540 «Trafikkmengde». For hvert prosjekt spørres det på et utsnitt rundt traséen filtrert på vegnummer, og bare hovedlinja regnes med (delstrekning 1, uten kryssdeler og sideanlegg). Tallet som vises er et lengdevektet snitt, med spenn beregnet over segmenter på minst én kilometer.
+
+Hentingen skjer i nettleseren når et prosjektkort åpnes. Verdiene i `adt.js` vises umiddelbart og brukes som reserve hvis API-et ikke svarer. Oppdater dem med `perl adt.pl data.js adt.js`.
+
+Stad skipstunnel har ingen årsdøgntrafikk. For Bybanen til Åsane vises trafikken på parallelle E39, tydelig merket i kortet.
+
 ## Tallkilder
 
 Kostnad, statlig andel, bompenger, lengde, reisetid og netto nytte er hentet fra stortingsproposisjoner (Prop. 97 S 2024–2025 Arna–Stanghelle, Prop. 44 S 2023–2024 Røldal–Seljestad, Prop. 41 S 2017–2018 Sotrasambandet, Prop. 228 S 2020–2021 Hordfast), NTP 2025–2036 (Meld. St. 14 (2023–2024)), Statens vegvesens planomtaler og porteføljeprioritering (mai 2025), Kystverket og NRK. Lenker ligger under «Kilder» i hvert prosjekt i kartet. Prisår er oppgitt der det er kjent; tallene er ikke omregnet til felles prisnivå.
@@ -39,11 +47,12 @@ Kartet settes sammen fra tre kildefiler:
 - `template.html` – layout, CSS og JavaScript (filter, søk, kort, kartvalg)
 - `projects.js` – `PROJECTS`-lista med tekst og tall per prosjekt. Kostnad som tall til nøkkeltall og sortering ligger i `KOST_MRD`, og én setning per prosjekt i `KORT`, begge i `template.html`.
 - `data.js` – geometri (GeoJSON), generert fra `geodata/`
+- `adt.js` – reserveverdier for trafikkmengde, generert med `perl adt.pl data.js adt.js`
 
 Bygg og publiser:
 
 ```bash
-perl assemble.pl template.html projects.js data.js vestland_samferdselskart.html && cp vestland_samferdselskart.html index.html && git add -A && git commit -m "Oppdatert kart" && git push
+perl assemble.pl template.html projects.js vestland_samferdselskart.html data.js adt.js && cp vestland_samferdselskart.html index.html && git add -A && git commit -m "Oppdatert kart" && git push
 ```
 
 Nettsiden https://sondreolsen.github.io/vestland-samferdsel/ oppdateres ett til to minutter etter push.
