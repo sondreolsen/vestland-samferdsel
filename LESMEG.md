@@ -34,4 +34,16 @@ Ikke funnet: bompengeandel for Hordfast i 2026-planen og for Bokn–Bømlafjorde
 
 ## Oppdatere
 
-Redigér `PROJECTS` i HTML-filen for å endre tekst og tall. For ny geometri: legg en GeoJSON-fil i `geodata/`, lim geometrien inn i `window.PROJ_GEO` i HTML-filen (eller i `data.js`) med en nøkkel, og legg nøkkelen i `geo:[...]` for prosjektet.
+Kartet settes sammen fra tre kildefiler:
+
+- `template.html` – layout, CSS og JavaScript (filter, søk, kort, kartvalg)
+- `projects.js` – `PROJECTS`-lista med tekst og tall per prosjekt. Kostnad som tall til nøkkeltall og sortering ligger i `KOST_MRD`, og én setning per prosjekt i `KORT`, begge i `template.html`.
+- `data.js` – geometri (GeoJSON), generert fra `geodata/`
+
+Bygg og publiser:
+
+```bash
+perl assemble.pl template.html projects.js data.js vestland_samferdselskart.html && cp vestland_samferdselskart.html index.html && git add -A && git commit -m "Oppdatert kart" && git push
+```
+
+Nettsiden https://sondreolsen.github.io/vestland-samferdsel/ oppdateres ett til to minutter etter push.
