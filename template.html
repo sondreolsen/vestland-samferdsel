@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Samferdselsprosjekter i Vestland</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<!--DATA-->
+<style>
+  :root{
+    --bg:#eef4fa; --panel:#ffffff; --ink:#14233a; --muted:#5a6b80; --line:#dfe7f0; --line2:#eef2f7;
+    --primary:#0b4f8a; --primary-ink:#ffffff; --navy:#123b6d; --chip:#f2f6fb; --chip-ink:#2b3d55;
+    --veg:#1f5fbf; --bane:#c0392b; --bybane:#1e8e5a; --sjo:#7b3fa0;
+    --shadow:0 6px 24px rgba(20,35,58,.14); --r:14px;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%}
+  body{font:14px/1.45 Inter,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased}
+  button{font:inherit;color:inherit}
+  a{color:var(--primary)}
+  #app{display:grid;grid-template-columns:392px 1fr;height:100vh;height:100dvh;overflow:hidden}
+
+  /* ---------- Sidepanel ---------- */
+  #side{background:var(--bg);display:flex;flex-direction:column;min-width:0;overflow:hidden}
+  #sideScroll{overflow:auto;padding:22px 18px 18px;display:flex;flex-direction:column;gap:14px}
+  h1{font-size:25px;line-height:1.15;margin:0;letter-spacing:-.02em;font-weight:700}
+  .lead{margin:6px 0 0;color:var(--muted);font-size:13px}
+  .search{position:relative}
+  .search input{width:100%;border:1px solid var(--line);background:#fff;border-radius:10px;padding:10px 12px 10px 36px;font:inherit;font-size:13.5px;color:var(--ink);outline:none}
+  .search input:focus{border-color:var(--primary);box-shadow:0 0 0 3px rgba(11,79,138,.12)}
+  .search svg{position:absolute;left:12px;top:50%;transform:translateY(-50%);width:16px;height:16px;color:var(--muted)}
+  .lbl{font-size:12.5px;font-weight:600;color:var(--ink);margin:0 0 7px}
+  .chips{display:flex;flex-wrap:wrap;gap:7px}
+  .chip{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 12px;font-size:12.5px;font-weight:500;cursor:pointer;color:var(--chip-ink);display:inline-flex;align-items:center;gap:7px;user-select:none;transition:background .12s,border-color .12s}
+  .chip:hover{border-color:#b9c8d8}
+  .chip.on{background:var(--navy);border-color:var(--navy);color:#fff}
+  .chip .dot{width:9px;height:9px;border-radius:50%;background:currentColor;flex:none}
+  .chip.type .dot{background:var(--c)}
+  .chip.type.off{color:var(--muted);background:#fff}
+  .chip.type.off .dot{opacity:.35}
+  .stats{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .stat{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;display:flex;gap:12px;align-items:center}
+  .stat .ic{width:34px;height:34px;border-radius:9px;background:#e6eef7;color:var(--primary);display:grid;place-items:center;flex:none}
+  .stat .ic svg{width:18px;height:18px}
+  .stat b{display:block;font-size:17px;font-weight:700;letter-spacing:-.01em;line-height:1.1}
+  .stat span{display:block;color:var(--muted);font-size:12px;margin-top:2px}
+  .listhead{display:flex;justify-content:space-between;align-items:center;margin-top:2px}
+  .listhead h2{font-size:14px;margin:0;font-weight:600}
+  .sort{display:flex;align-items:center;gap:4px;color:var(--muted);font-size:12.5px}
+  .sort select{border:0;background:transparent;color:var(--ink);font:inherit;font-size:12.5px;font-weight:600;cursor:pointer;padding:2px 0}
+  #list{display:flex;flex-direction:column;gap:8px}
+  .item{background:#fff;border:1px solid var(--line);border-radius:12px;padding:11px 12px 11px 14px;cursor:pointer;display:grid;grid-template-columns:10px 1fr auto 14px;gap:11px;align-items:center;transition:border-color .12s,box-shadow .12s}
+  .item:hover{border-color:#b9c8d8;box-shadow:0 2px 10px rgba(20,35,58,.06)}
+  .item.active{border-color:var(--primary);box-shadow:0 0 0 2px rgba(11,79,138,.15)}
+  .item .dot{width:10px;height:10px;border-radius:50%}
+  .item .n{font-weight:600;font-size:13.5px;line-height:1.25}
+  .item .s{color:var(--muted);font-size:11.5px;margin-top:3px;display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+  .item .s i{width:4px;height:4px;border-radius:50%;background:#b9c8d8;display:inline-block}
+  .item .k{font-weight:600;font-size:13px;white-space:nowrap}
+  .item .chev{color:#98a7b8}
+  .empty{color:var(--muted);font-size:13px;padding:14px;text-align:center}
+  .foot{color:var(--muted);font-size:11px;line-height:1.45;padding-top:6px;border-top:1px solid var(--line)}
+  .foot a{color:var(--muted)}
+
+  /* ---------- Kart ---------- */
+  #mapwrap{position:relative;min-width:0}
+  #map{position:absolute;inset:0;background:#dfe9f3}
+  .leaflet-container{font:inherit}
+  .leaflet-control-zoom{border:0!important;box-shadow:var(--shadow)!important;border-radius:10px!important;overflow:hidden}
+  .leaflet-control-zoom a{width:34px!important;height:34px!important;line-height:34px!important;color:var(--ink)!important;border-color:var(--line2)!important;font-weight:400}
+  .leaflet-bar a:hover{background:#f4f7fb!important}
+  .ctl{background:#fff;border-radius:10px;box-shadow:var(--shadow)}
+  .locate{width:34px;height:34px;display:grid;place-items:center;cursor:pointer;color:var(--ink);border:0;background:#fff;border-radius:10px}
+  .locate svg{width:17px;height:17px}
+  .basemap{position:relative}
+  .basemap > button{display:flex;align-items:center;gap:8px;border:0;background:#fff;border-radius:10px;padding:8px 12px;cursor:pointer;font-weight:600;font-size:13px;box-shadow:var(--shadow)}
+  .basemap > button svg{width:16px;height:16px;color:var(--primary)}
+  .basemap .menu{display:none;position:absolute;right:0;top:calc(100% + 6px);background:#fff;border-radius:10px;box-shadow:var(--shadow);min-width:210px;padding:6px;z-index:5}
+  .basemap.open .menu{display:block}
+  .basemap .menu button{display:flex;width:100%;text-align:left;border:0;background:none;padding:8px 10px;border-radius:7px;cursor:pointer;font-size:13px;gap:8px;align-items:center}
+  .basemap .menu button:hover{background:#f2f6fb}
+  .basemap .menu button.on{font-weight:600;color:var(--primary)}
+  .basemap .menu button.on::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--primary)}
+  .basemap .menu button:not(.on)::before{content:"";width:7px;height:7px}
+  .leaflet-control-scale-line{border-color:#5a6b80!important;color:#14233a!important;background:rgba(255,255,255,.75)!important;font-size:11px!important}
+  .leaflet-control-attribution{font-size:10px!important;background:rgba(255,255,255,.75)!important}
+  .legend{background:rgba(255,255,255,.94);border-radius:10px;box-shadow:var(--shadow);padding:9px 12px;font-size:11.5px;line-height:1.8;color:var(--ink)}
+  .legend .row{display:flex;align-items:center;gap:8px}
+  .legend i{display:inline-block;width:24px;height:0;border-top:4px solid #56657a}
+  .legend i.d{border-top-style:dashed}
+  .legend i.o{border-top-style:dotted}
+  .leaflet-tooltip{font:inherit;font-size:12.5px;font-weight:600;border-radius:8px;border:0;box-shadow:var(--shadow);padding:6px 10px}
+
+  /* Når kortet er åpent på desktop flyttes kartkontrollene til venstre for kortet */
+  @media (min-width:841px){ body.card-open .leaflet-top.leaflet-right{right:392px} body.card-open .leaflet-bottom.leaflet-right{right:392px} }
+
+  /* ---------- Prosjektkort ---------- */
+  #card{position:absolute;top:16px;right:16px;width:360px;max-width:calc(100% - 32px);max-height:calc(100% - 32px);background:#fff;border-radius:var(--r);box-shadow:var(--shadow);display:none;flex-direction:column;overflow:hidden;z-index:1000}
+  #card.on{display:flex}
+  #card .hero{height:8px;background:var(--c,var(--primary))}
+  #card .body{overflow:auto;padding:16px 18px 18px}
+  #card .close{position:absolute;top:14px;right:12px;width:30px;height:30px;border-radius:8px;border:0;background:#fff;cursor:pointer;display:grid;place-items:center;box-shadow:0 1px 6px rgba(0,0,0,.15);z-index:2}
+  #card .close svg{width:14px;height:14px}
+  #card h2{font-size:18px;line-height:1.25;margin:0 30px 6px 0;letter-spacing:-.01em;font-weight:700;display:flex;gap:9px;align-items:flex-start}
+  #card h2 .dot{width:10px;height:10px;border-radius:50%;margin-top:6px;flex:none}
+  #card .meta{color:var(--muted);font-size:12px;margin:0 0 10px;display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+  #card .meta i{width:4px;height:4px;border-radius:50%;background:#b9c8d8;display:inline-block}
+  #card p.kort{margin:0 0 12px;font-size:13.5px}
+  #card p.fase{margin:0 0 12px;font-size:12.5px;color:var(--muted)}
+  .facts{border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  .fact{display:grid;grid-template-columns:32px 1fr;gap:6px;padding:9px 12px;border-top:1px solid var(--line2);align-items:start}
+  .fact:first-child{border-top:0}
+  .fact .ic{color:var(--primary);width:22px;height:22px;display:grid;place-items:center}
+  .fact .ic svg{width:16px;height:16px}
+  .fact .t{color:var(--muted);font-size:11.5px;text-transform:uppercase;letter-spacing:.04em;font-weight:600}
+  .fact .v{font-weight:600;font-size:13.5px;line-height:1.3;margin-top:1px}
+  .fact .v.big{font-size:15px}
+  .fact small{display:block;color:var(--muted);font-weight:400;font-size:12px;margin-top:3px;line-height:1.4}
+  .fact .pill{display:inline-block;background:var(--primary);color:#fff;border-radius:7px;padding:3px 9px;font-size:12px;font-weight:600}
+  .fact .split{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:2px}
+  .fact .split b{display:block;font-size:14px}
+  .fact .split span{color:var(--muted);font-size:11.5px;font-weight:400}
+  .more{display:flex;align-items:center;gap:6px;margin-top:12px;font-weight:600;font-size:13px;text-decoration:none}
+  .more:hover{text-decoration:underline}
+  details.src{margin-top:12px;font-size:12px;color:var(--muted)}
+  details.src summary{cursor:pointer;font-weight:600;color:var(--ink)}
+  details.src a{display:block;color:var(--primary);text-decoration:none;margin-top:5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  details.src a:hover{text-decoration:underline}
+
+  /* ---------- Mobil ---------- */
+  #mobbar{display:none}
+  @media (max-width:840px){
+    #app{grid-template-columns:1fr;grid-template-rows:1fr auto}
+    #side,#mapwrap{grid-row:1;grid-column:1}
+    body.view-map #side{display:none}
+    body.view-list #mapwrap{display:none}
+    #sideScroll{padding:18px 14px 14px}
+    h1{font-size:22px}
+    #mobbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:#fff;border-top:1px solid var(--line);grid-row:2}
+    #mobbar button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:10px;font-weight:600;font-size:13.5px;display:flex;align-items:center;justify-content:center;gap:8px;cursor:pointer}
+    #mobbar button.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+    #mobbar button svg{width:16px;height:16px}
+    #card{top:auto;bottom:12px;left:12px;right:12px;width:auto;max-height:60%}
+    .basemap > button span{display:none}
+    .basemap > button{padding:8px 10px}
+  }
+</style>
+</head>
+<body class="view-map">
+<div id="app">
+  <aside id="side">
+    <div id="sideScroll">
+      <div>
+        <h1>Samferdselsprosjekter i&nbsp;Vestland</h1>
+        <p class="lead">Riksveg, jernbane, bybane og sjø. Utforsk planlagte og pågående prosjekt som utvikler Vestland for framtida.</p>
+      </div>
+      <div class="search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="q" type="search" placeholder="Søk etter prosjekt, sted eller vegnummer …" autocomplete="off">
+      </div>
+      <div>
+        <p class="lbl">Vis prosjekt med status</p>
+        <div class="chips" id="fStatus"></div>
+      </div>
+      <div>
+        <p class="lbl">Vis prosjekttype</p>
+        <div class="chips" id="fKat"></div>
+      </div>
+      <div class="stats">
+        <div class="stat"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg></div><div><b id="stN">–</b><span>prosjekter</span></div></div>
+        <div class="stat"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></div><div><b id="stK">–</b><span id="stKl">samlet kostnadsanslag</span></div></div>
+      </div>
+      <div class="listhead">
+        <h2 id="listTitle">Prosjekter</h2>
+        <label class="sort">Sorter: <select id="sort"><option value="prio">Prioritet</option><option value="kost">Kostnad</option><option value="navn">Navn</option></select></label>
+      </div>
+      <div id="list"></div>
+      <div class="foot">Geometri: Statens vegvesen (ArcGIS), OpenStreetMap og egne skisser. Tall: NTP 2025–2036, stortingsproposisjoner, Statens vegvesen, Kystverket. Prisår står ved hvert tall. Sist oppdatert september 2026.</div>
+    </div>
+  </aside>
+  <div id="mapwrap">
+    <div id="map"></div>
+    <div id="card" aria-live="polite">
+      <div class="hero"></div>
+      <button class="close" id="cardClose" aria-label="Lukk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+      <div class="body" id="cardBody"></div>
+    </div>
+  </div>
+  <div id="mobbar">
+    <button id="mbMap" class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2z M9 4v14 M15 6v14"/></svg>Kart</button>
+    <button id="mbList"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>Liste</button>
+  </div>
+</div>
+
+<script>
+// ------------------------------------------------------------------
+// Prosjektfakta. Alle beløp i milliarder kroner (mrd) med prisår der det er kjent.
+// ------------------------------------------------------------------
+const STATUS = {
+  bygging: {label:'Under bygging',              short:'Under bygging',  color:'#1e8e5a', dash:null},
+  ntp1:    {label:'Prioritert i NTP 2025–2036', short:'Prioritert NTP', color:'#0b4f8a', dash:null},
+  ntp2:    {label:'NTP, andre periode (2031–36)', short:'Andre periode', color:'#4a86c5', dash:'16,10'},
+  ikke:    {label:'Ikke prioritert / på vent',  short:'På vent',        color:'#8a98a8', dash:'9,9'},
+  skisse:  {label:'Tidlig planlegging (skisse)', short:'Skisse',        color:'#8a98a8', dash:'2,9'},
+};
+const KAT = { veg:{label:'Veg',color:'#1f5fbf'}, bane:{label:'Jernbane',color:'#c0392b'}, bybane:{label:'Bybane',color:'#1e8e5a'}, sjo:{label:'Sjø',color:'#7b3fa0'} };
+// Numerisk kostnad (mrd kr) til nøkkeltall og sortering. null = ikke fastsatt.
+const KOST_MRD = {hordfast:53.7, bokn:21.3, gullkista:0.4, arna:41.2, vagsbotn:9.2, fjosanger:null, bybanen:18.2, floyfjell:3.4, sotra:23.1, storehaugen:4.6, vikafjellet:3.8, erdal:3.4, bogstunnelen:1.1, roldal:5.4, hylland:2.5, klakegg:null, strynefjellet:5.9, byrkjelo_grodas:11.4, stad:8.6};
+// Én setning om hva prosjektet er
+const KORT = {
+  hordfast:'Ferjefri E39 over Bjørnafjorden og Langenuen binder Sunnhordland og Bergensregionen sammen med bru og tunnel.',
+  bokn:'Ny firefelts E39 fra Rogfast på Bokn til Bømlafjordtunnelen, som fullfører ferjefri veg mellom Stavanger og Stord.',
+  gullkista:'Kort tunnel og ny veg forbi det smale og rasutsatte partiet ved Gullkista langs Breimsvatnet.',
+  arna:'Ny E16 og dobbeltsporet jernbane i lange tunneler mellom Arna og Stanghelle, Norges største fellesprosjekt for veg og bane.',
+  vagsbotn:'Nordhordlandstunnelen gir firefelts E39 fra Vågsbotn i Åsane til Nordhordlandsbrua og fullfører Ringveg øst nordover.',
+  fjosanger:'Lang tunnel mellom Fjøsanger og Arna skal lede gjennomgangstrafikken på E39 utenom Bergen sentrum.',
+  bybanen:'Bybanen forlenges fra sentrum gjennom Sandviken til Åsane og Vågsbotn, med ny tunnel bak Bryggen.',
+  floyfjell:'Fløyfjelltunnelen forlenges nordover til Eidsvåg slik at dagens E39 i Sandviken frigjøres til Bybanen.',
+  sotra:'Ny firefelts rv 555 med ny Sotrabru mellom Storavatnet i Bergen og Kolltveit på Sotra, bygd som OPS-prosjekt.',
+  storehaugen:'Hafstadfjelltunnelen fører E39 utenom Førde sentrum og Halbrendslia.',
+  vikafjellet:'Lang tunnel under Vikafjellet gir helårs og vintersikker rv 13 mellom Vik og Voss.',
+  erdal:'Skredsikring av rv 5 langs Førdefjorden med ny tunnel mellom Erdal og Naustdal.',
+  bogstunnelen:'Ny tunnel forbi Vadheim fra Bogstunnelen til Gaular grense på E39.',
+  roldal:'Ny og lengre Røldalstunnel på E134 fjerner den bratte og rasutsatte stigningen over Seljestad.',
+  hylland:'Skredsikring av E16 gjennom Nærøydalen med ny tunnel som erstatter Stalheims- og Sivletunnelen.',
+  klakegg:'Skredsikring av E39 gjennom Våtedalen mellom Klakegg og Byrkjelo.',
+  strynefjellet:'Lang tunnel under Strynefjellet på rv 15, med arm mot Geiranger, erstatter tre gamle tunneler.',
+  byrkjelo_grodas:'Ferjefri E39 gjennom Nordfjord med tunnel gjennom Utvikfjellet og hengebru over fjorden til Svarstad.',
+  stad:'Verdens første skipstunnel gjennom Stadlandet gir trygg passasje forbi Stadhavet.',
+};
+
+<!--PROJECTS-->
+
+// ------------------------------------------------------------------
+// Kart
+// ------------------------------------------------------------------
+const map = L.map('map', {zoomControl:false, attributionControl:true});
+L.control.zoom({position:'topright'}).addTo(map);
+L.control.scale({imperial:false, position:'bottomright', maxWidth:120}).addTo(map);
+
+const esriAttr = 'Esri, HERE, Garmin, © OpenStreetMap-bidragsytere';
+const BASEMAPS = {
+  standard: {label:'Standardkart',       layer:L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {maxZoom:18, attribution:esriAttr})},
+  veg:      {label:'Vegkart',            layer:L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {maxZoom:18, attribution:esriAttr})},
+  sat:      {label:'Satellitt',          layer:L.layerGroup([
+              L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {maxZoom:18, attribution:'Esri, Maxar, Earthstar Geographics'}),
+              L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}', {maxZoom:18, opacity:.9})])},
+  topo:     {label:'Kartverket topografisk', layer:L.tileLayer('https://cache.kartverket.no/v1/wmts/1.0.0/topo/default/webmercator/{z}/{y}/{x}.png', {maxZoom:18, attribution:'© Kartverket'})},
+  graa:     {label:'Kartverket gråtone', layer:L.tileLayer('https://cache.kartverket.no/v1/wmts/1.0.0/topograatone/default/webmercator/{z}/{y}/{x}.png', {maxZoom:18, attribution:'© Kartverket'})},
+  osm:      {label:'OpenStreetMap',      layer:L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom:19, attribution:'© OpenStreetMap-bidragsytere'})},
+};
+let baseKey = 'standard'; BASEMAPS[baseKey].layer.addTo(map);
+function setBase(k){ if (k===baseKey) return; map.removeLayer(BASEMAPS[baseKey].layer); baseKey=k; BASEMAPS[k].layer.addTo(map); renderBaseCtl(); }
+
+// Kartvalg + finn meg (egen kontroll øverst til høyre)
+const TopCtl = L.Control.extend({ onAdd(){
+  const d = L.DomUtil.create('div'); d.style.display='flex'; d.style.gap='8px'; d.style.alignItems='flex-start';
+  d.innerHTML = `<div class="basemap" id="basemap"><button type="button" aria-haspopup="listbox"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2z M9 4v14 M15 6v14"/></svg><span id="baseLabel"></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="color:#5a6b80;width:13px"><path d="m6 9 6 6 6-6"/></svg></button><div class="menu" id="baseMenu" role="listbox"></div></div>
+  <button type="button" class="locate ctl" id="locate" title="Vis hvor jeg er"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="8"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2"/></svg></button>`;
+  L.DomEvent.disableClickPropagation(d); L.DomEvent.disableScrollPropagation(d);
+  return d; } });
+new TopCtl({position:'topright'}).addTo(map);
+function renderBaseCtl(){
+  document.getElementById('baseLabel').textContent = BASEMAPS[baseKey].label;
+  document.getElementById('baseMenu').innerHTML = Object.entries(BASEMAPS).map(([k,v]) => `<button type="button" data-k="${k}" class="${k===baseKey?'on':''}" role="option">${v.label}</button>`).join('');
+}
+renderBaseCtl();
+const bm = document.getElementById('basemap');
+bm.querySelector('button').onclick = () => bm.classList.toggle('open');
+bm.querySelector('.menu').onclick = e => { const b = e.target.closest('button[data-k]'); if (b) { setBase(b.dataset.k); bm.classList.remove('open'); } };
+document.addEventListener('click', e => { if (!bm.contains(e.target)) bm.classList.remove('open'); });
+document.getElementById('locate').onclick = () => {
+  if (!navigator.geolocation) return;
+  navigator.geolocation.getCurrentPosition(pos => { const ll=[pos.coords.latitude,pos.coords.longitude]; map.setView(ll, 11); L.circleMarker(ll,{radius:7,color:'#fff',weight:2,fillColor:'#0b4f8a',fillOpacity:1}).addTo(map).bindTooltip('Du er her'); }, () => {}, {timeout:8000});
+};
+// Zoom-knappene skal ligge under kartvalget
+(function(){ const tr = document.querySelector('.leaflet-top.leaflet-right'); const z = tr.querySelector('.leaflet-control-zoom'); if (z) { tr.appendChild(z); z.style.marginTop='8px'; } })();
+
+// Fylkesgrenser
+const vest = L.geoJSON(window.FYLKE.vestland, {style:{color:'#0b4f8a', weight:2, opacity:.75, fill:true, fillColor:'#0b4f8a', fillOpacity:.025, interactive:false}}).addTo(map);
+L.geoJSON(window.FYLKE.rogaland, {style:{color:'#8a98a8', weight:1, opacity:.6, dashArray:'4,4', fill:false, interactive:false}}).addTo(map);
+map.fitBounds(vest.getBounds(), {padding:[10,10]});
+
+map.createPane('hits').style.zIndex = 450;
+map.createPane('dots').style.zIndex = 460;
+const layers = {}, dots = {};
+let active = null;
+
+function styleFor(p, hi){
+  const st = STATUS[p.status], k = KAT[p.kat];
+  return {color:k.color, weight: hi ? 11 : (p.status==='bygging'||p.status==='ntp1' ? 8 : 7), opacity: hi ? 1 : .95, dashArray: st.dash ? st.dash.split(',').map(v=>Math.round(v*1.6)).join(',') : null, lineCap: st.dash ? 'butt' : 'round', lineJoin:'round'};
+}
+function haloFor(hi){ return {color:'#fff', weight: hi ? 16 : 13, opacity:.95, lineCap:'round', lineJoin:'round', interactive:false}; }
+const HIT = {color:'#000', opacity:0, weight:34, lineCap:'round', lineJoin:'round', interactive:true, className:'hit', pane:'hits'};
+
+function linesOf(g){ return g.type==='MultiLineString' ? g.coordinates : g.type==='LineString' ? [g.coordinates] : g.type==='MultiPolygon' ? g.coordinates.flat() : g.type==='Polygon' ? g.coordinates : []; }
+function midpoint(p){ // punkt midt på lengste linje i første geometri som er en linje
+  for (const gk of p.geo) { const g = window.PROJ_GEO[gk]; if (!g || g.type.includes('Polygon')) continue;
+    const ls = linesOf(g).slice().sort((a,b)=>b.length-a.length)[0]; const c = ls[Math.floor(ls.length/2)]; return [c[1], c[0]]; }
+  const g = window.PROJ_GEO[p.geo[0]]; const ls = linesOf(g)[0]; const c = ls[Math.floor(ls.length/2)]; return [c[1], c[0]];
+}
+
+PROJECTS.forEach(p => {
+  const fg = L.featureGroup();
+  p.geo.forEach(gk => {
+    const g = window.PROJ_GEO[gk]; if(!g) return;
+    if (g.type === 'MultiPolygon' || g.type === 'Polygon') {
+      L.geoJSON(g, {style:{color:KAT[p.kat].color, weight:1, opacity:.7, fillColor:KAT[p.kat].color, fillOpacity:.25}}).addTo(fg);
+    } else {
+      const isRail = gk === 'arna_bane';
+      L.geoJSON(g, {style: haloFor(false)}).addTo(fg);
+      const s = styleFor(p,false); if (isRail) { s.color = KAT.bane.color; s.dashArray = null; s.weight = 4; } else if (p.id==='arna') { s.color = KAT.veg.color; }
+      L.geoJSON(g, {style:s}).addTo(fg);
+    }
+  });
+  p.geo.forEach(gk => { const g = window.PROJ_GEO[gk]; if (g && !g.type.includes('Polygon')) L.geoJSON(g, {style: HIT}).addTo(fg); });
+  fg.eachLayer(l => l.eachLayer ? l.eachLayer(x => { x.on('mouseover', () => { if (active!==p.id) setHighlight(p.id, true, false); }); x.on('mouseout', () => { if (active!==p.id) setHighlight(p.id, false, false); }); x.bindTooltip(p.navn, {sticky:true}); }) : null);
+  fg.addTo(map); layers[p.id] = fg;
+  // Prikk midt på prosjektet
+  const d = L.circleMarker(midpoint(p), {radius:7, color:'#fff', weight:2.5, fillColor:KAT[p.kat].color, fillOpacity:1, pane:'dots'});
+  d.bindTooltip(p.navn, {direction:'top', offset:[0,-8]});
+  d.on('click', e => { L.DomEvent.stop(e); select(p.id, false); });
+  d.addTo(map); dots[p.id] = d;
+});
+
+function setHighlight(id, on, reorder){
+  const p = PROJECTS.find(x=>x.id===id); const fg = layers[id];
+  fg.eachLayer(gj => gj.eachLayer(x => {
+    if (!x.setStyle) return;
+    const o = x.options;
+    if (o.className === 'hit') return;
+    if (o.fillOpacity !== undefined && o.fill !== false && o.weight <= 1.5) { x.setStyle({fillOpacity: on ? .4 : .25}); return; }
+    if (o.color === '#fff') { x.setStyle(haloFor(on)); return; }
+    const s = styleFor(p,on); if (o.color === KAT.bane.color && p.id==='arna') { s.color = KAT.bane.color; s.dashArray=null; s.weight = on ? 6 : 4; } else if (p.id==='arna') { s.color = KAT.veg.color; }
+    x.setStyle(s);
+  }));
+  dots[id].setStyle({radius: on ? 9 : 7, weight: on ? 3 : 2.5});
+  if (on && reorder) fg.bringToFront();
+}
+
+// Klikk i kartet: nærmeste synlige prosjektlinje innen tolPx piksler
+function nearestProject(latlng, tolPx){
+  const p0 = map.latLngToLayerPoint(latlng); let best = null, bestD = Infinity;
+  PROJECTS.forEach(p => {
+    if (!map.hasLayer(layers[p.id])) return;
+    p.geo.forEach(gk => { const g = window.PROJ_GEO[gk]; if (!g) return;
+      linesOf(g).forEach(line => { let a = map.latLngToLayerPoint([line[0][1], line[0][0]]);
+        for (let i = 1; i < line.length; i++) { const b = map.latLngToLayerPoint([line[i][1], line[i][0]]); const d = L.LineUtil.pointToSegmentDistance(p0, a, b); if (d < bestD) { bestD = d; best = p; } a = b; } }); });
+  });
+  return bestD <= tolPx ? best : null;
+}
+map.on('click', e => { const p = nearestProject(e.latlng, 22); if (p) select(p.id, false); });
+
+// Tegnforklaring for linjestil
+const legend = L.control({position:'bottomleft'});
+legend.onAdd = () => { const d = L.DomUtil.create('div','legend');
+  d.innerHTML = `<div class="row"><i></i>Under bygging / prioritert i NTP</div><div class="row"><i class="d"></i>Andre periode eller på vent</div><div class="row"><i class="o"></i>Skisse, trasé ikke valgt</div>`; return d; };
+legend.addTo(map);
+
+// ------------------------------------------------------------------
+// Panel: filter, søk, nøkkeltall, liste
+// ------------------------------------------------------------------
+const filt = {status:new Set(Object.keys(STATUS)), kat:new Set(Object.keys(KAT)), q:''};
+const fS = document.getElementById('fStatus'), fK = document.getElementById('fKat'), listEl = document.getElementById('list');
+const ORDER = ['bygging','ntp1','ntp2','ikke','skisse'];
+
+function renderFilters(){
+  fS.innerHTML = ''; Object.entries(STATUS).forEach(([k,v]) => { const c = document.createElement('button'); c.type='button'; c.className='chip'+(filt.status.has(k)?' on':''); c.textContent=v.label; c.onclick=()=>{ filt.status.has(k)?filt.status.delete(k):filt.status.add(k); apply(); }; fS.appendChild(c); });
+  fK.innerHTML = ''; Object.entries(KAT).forEach(([k,v]) => { const c = document.createElement('button'); c.type='button'; c.className='chip type'+(filt.kat.has(k)?'':' off'); c.style.setProperty('--c', v.color); c.innerHTML=`<span class="dot"></span>${v.label}`; c.onclick=()=>{ filt.kat.has(k)?filt.kat.delete(k):filt.kat.add(k); apply(); }; fK.appendChild(c); });
+}
+function matches(p){
+  if (!filt.status.has(p.status) || !filt.kat.has(p.kat)) return false;
+  if (!filt.q) return true;
+  const hay = (p.navn+' '+p.kommuner+' '+(KORT[p.id]||'')+' '+STATUS[p.status].label+' '+KAT[p.kat].label).toLowerCase();
+  return filt.q.split(/\s+/).every(w => hay.includes(w));
+}
+function sorted(list){
+  const s = document.getElementById('sort').value;
+  return list.slice().sort((a,b) => s==='kost' ? ((KOST_MRD[b.id]??-1)-(KOST_MRD[a.id]??-1)) : s==='navn' ? a.navn.localeCompare(b.navn,'nb') : (ORDER.indexOf(a.status)-ORDER.indexOf(b.status)) || ((KOST_MRD[b.id]??-1)-(KOST_MRD[a.id]??-1)));
+}
+function fmtMrd(v){ return v.toLocaleString('nb-NO',{maximumFractionDigits: v>=100?0:1}); }
+function apply(){
+  renderFilters();
+  const vis = PROJECTS.filter(matches);
+  PROJECTS.forEach(p => { const v = vis.includes(p); const on = map.hasLayer(layers[p.id]); if (v && !on) { layers[p.id].addTo(map); dots[p.id].addTo(map); } if (!v && on) { map.removeLayer(layers[p.id]); map.removeLayer(dots[p.id]); } });
+  const withK = vis.filter(p => KOST_MRD[p.id] != null); const sum = withK.reduce((s,p)=>s+KOST_MRD[p.id],0);
+  document.getElementById('stN').textContent = vis.length;
+  document.getElementById('stK').textContent = withK.length ? 'Ca. '+fmtMrd(sum)+' mrd. kr' : '–';
+  document.getElementById('stKl').textContent = withK.length < vis.length ? `samlet anslag (${withK.length} av ${vis.length} har tall)` : 'samlet kostnadsanslag';
+  document.getElementById('listTitle').textContent = `Prosjekter (${vis.length})`;
+  renderList(vis);
+  if (active && !vis.find(p=>p.id===active)) closeCard();
+}
+function renderList(vis){
+  listEl.innerHTML = '';
+  if (!vis.length) { listEl.innerHTML = '<div class="empty">Ingen prosjekter passer til søket eller filtrene.</div>'; return; }
+  sorted(vis).forEach(p => {
+    const d = document.createElement('div'); d.className = 'item'+(active===p.id?' active':''); d.setAttribute('role','button'); d.tabIndex=0;
+    d.innerHTML = `<span class="dot" style="background:${KAT[p.kat].color}"></span><div><div class="n">${p.navn}</div><div class="s">${KAT[p.kat].label}<i></i>${STATUS[p.status].label}</div></div><div class="k">${p.kostnad}</div><svg class="chev" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="m9 6 6 6-6 6"/></svg>`;
+    d.onclick = () => { select(p.id, true); if (window.matchMedia('(max-width:840px)').matches) setView('map'); };
+    d.onkeydown = e => { if (e.key==='Enter'||e.key===' ') { e.preventDefault(); d.onclick(); } };
+    d.onmouseenter = () => setHighlight(p.id, true, true); d.onmouseleave = () => { if (active!==p.id) setHighlight(p.id, false, false); };
+    listEl.appendChild(d);
+  });
+}
+document.getElementById('q').addEventListener('input', e => { filt.q = e.target.value.trim().toLowerCase(); apply(); });
+document.getElementById('sort').addEventListener('change', () => renderList(PROJECTS.filter(matches)));
+
+// ------------------------------------------------------------------
+// Prosjektkort
+// ------------------------------------------------------------------
+const ICON = {
+  kost:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg>',
+  fin:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 3 8l9 5 9-5-9-5zM3 8v8l9 5 9-5V8"/></svg>',
+  len:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 17 17 3M3 17h6M3 17v-6M21 7h-6M21 7v6"/></svg>',
+  tid:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>',
+  nytte:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8M14 7h7v7"/></svg>',
+  status:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg>',
+  geo:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2z M9 4v14 M15 6v14"/></svg>',
+};
+function fact(ic, t, v, note, cls){ return `<div class="fact"><div class="ic">${ICON[ic]}</div><div><div class="t">${t}</div><div class="v ${cls||''}">${v||'–'}${note?`<small>${note}</small>`:''}</div></div></div>`; }
+const card = document.getElementById('card'), cardBody = document.getElementById('cardBody');
+function select(id, zoom){
+  if (active && active!==id) setHighlight(active, false, false);
+  active = id; const p = PROJECTS.find(x=>x.id===id); setHighlight(id, true, true);
+  if (zoom) { const b = layers[id].getBounds(); map.fitBounds(b, {paddingTopLeft:[40,40], paddingBottomRight:[window.innerWidth>840 ? 400 : 40, window.innerWidth>840 ? 40 : Math.round(map.getSize().y*.55)], maxZoom:13}); }
+  const st = STATUS[p.status], k = KAT[p.kat];
+  const geosrc = p.geo.map(g => window.GEO_SRC[g]).filter((v,i,a)=>v&&a.indexOf(v)===i).join(' · ');
+  card.style.setProperty('--c', k.color);
+  cardBody.innerHTML = `
+    <h2><span class="dot" style="background:${k.color}"></span>${p.navn}</h2>
+    <div class="meta">${k.label}<i></i>${st.label}<i></i>${p.kommuner}</div>
+    <p class="kort">${KORT[p.id]||''}</p>
+    <p class="fase">${p.fase}</p>
+    <div class="facts">
+      ${fact('kost','Kostnad', p.kostnad, p.kostnadNote, 'big')}
+      <div class="fact"><div class="ic">${ICON.fin}</div><div><div class="t">Finansiering</div><div class="v split"><div><b>${p.stat||'–'}</b><span>Statlig andel</span></div><div><b>${p.bom||'–'}</b><span>Bompenger</span></div></div>${p.finNote?`<small>${p.finNote}</small>`:''}</div></div>
+      ${fact('len','Lengde', p.lengde, p.lengdeNote)}
+      ${fact('tid','Reisetid', p.reisetid, p.reisetidNote)}
+      ${fact('nytte','Netto nytte', p.nytte, p.nytteNote)}
+      <div class="fact"><div class="ic">${ICON.status}</div><div><div class="t">Status</div><div class="v"><span class="pill" style="background:${st.color}">${st.label}</span></div></div></div>
+      ${fact('geo','Geometri', '<span style="font-weight:400;font-size:12.5px">'+geosrc+'</span>')}
+    </div>
+    ${p.kilder && p.kilder.length ? `<a class="more" href="${p.kilder[0][1]}" target="_blank" rel="noopener">Les mer om prosjektet <span aria-hidden="true">→</span></a>` : ''}
+    <details class="src"><summary>Alle kilder (${p.kilder.length})</summary>${p.kilder.map(([t,u])=>`<a href="${u}" target="_blank" rel="noopener" title="${u}">${t}</a>`).join('')}</details>`;
+  card.classList.add('on'); document.body.classList.add('card-open'); cardBody.scrollTop = 0;
+  document.querySelectorAll('.item').forEach(el => el.classList.toggle('active', el.querySelector('.n').textContent === p.navn));
+}
+function closeCard(){ if (active) setHighlight(active,false,false); active=null; card.classList.remove('on'); document.body.classList.remove('card-open'); document.querySelectorAll('.item.active').forEach(el=>el.classList.remove('active')); }
+document.getElementById('cardClose').onclick = closeCard;
+document.addEventListener('keydown', e => { if (e.key==='Escape') closeCard(); });
+
+// Mobil: Kart / Liste
+function setView(v){ document.body.classList.toggle('view-map', v==='map'); document.body.classList.toggle('view-list', v==='list'); document.getElementById('mbMap').classList.toggle('on', v==='map'); document.getElementById('mbList').classList.toggle('on', v==='list'); if (v==='map') setTimeout(()=>map.invalidateSize(), 50); }
+document.getElementById('mbMap').onclick = () => setView('map');
+document.getElementById('mbList').onclick = () => setView('list');
+
+apply();
+new ResizeObserver(() => map.invalidateSize()).observe(document.getElementById('map'));
+// Kartet kan ha fått størrelse etter init (innbygging, treg layout): tilpass utsnittet på nytt
+function fitAll(){ map.invalidateSize(); if (!active) map.fitBounds(vest.getBounds(), {padding:[10,10]}); }
+requestAnimationFrame(fitAll); window.addEventListener('load', () => setTimeout(fitAll, 50));
+</script>
+</body>
+</html>
