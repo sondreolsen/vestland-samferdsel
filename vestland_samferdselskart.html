@@ -312,7 +312,8 @@ function styleFor(p, hi){
 }
 function haloFor(hi){ return {color:'#fff', weight: hi ? 16 : 13, opacity:.95, lineCap:'round', lineJoin:'round', interactive:false}; }
 // Bred, usynlig klikkflate rundt hver linje
-const HIT = {color:'#000', opacity:0, weight:34, lineCap:'round', lineJoin:'round', interactive:true, className:'hit'};
+map.createPane('hits').style.zIndex = 450; // eget lag over alle linjer, trenger aldri omsortering
+const HIT = {color:'#000', opacity:0, weight:34, lineCap:'round', lineJoin:'round', interactive:true, className:'hit', pane:'hits'};
 
 PROJECTS.forEach(p => {
   const fg = L.featureGroup();
@@ -333,11 +334,8 @@ PROJECTS.forEach(p => {
   fg.addTo(map);
   layers[p.id] = fg;
 });
-// Klikkflatene til alle prosjekter over alle linjer, så nabolinjer ikke skjuler dem
-function hitsToFront(){ Object.values(layers).forEach(fg => fg.eachLayer(gj => gj.eachLayer && gj.eachLayer(x => { if (x.options.className==='hit' && x.bringToFront) x.bringToFront(); }))); }
-hitsToFront();
 
-function setHighlight(id, on){
+function setHighlight(id, on, reorder){
   const p = PROJECTS.find(x=>x.id===id); const fg = layers[id];
   fg.eachLayer(gj => gj.eachLayer(x => {
     if (!x.setStyle) return;
@@ -348,7 +346,7 @@ function setHighlight(id, on){
     const s = styleFor(p,on); if (o.color === KAT.bane.color && p.id==='arna') { s.color = KAT.bane.color; s.dashArray=null; s.weight = on ? 6 : 4; } else if (p.id==='arna') { s.color = KAT.veg.color; }
     x.setStyle(s);
   }));
-  if (on) { fg.bringToFront(); hitsToFront(); }
+  if (on && reorder) fg.bringToFront(); // flytt bare i DOM når pekeren ikke er over kartet
 }
 
 // ------------------------------------------------------------------
@@ -376,14 +374,14 @@ function renderList(){
     const st = STATUS[p.status];
     d.innerHTML = `<div class="sw ${st.dash?'dash':''}" style="background:${st.dash?'':KAT[p.kat].color};color:${KAT[p.kat].color}"></div><div><div class="n">${p.navn}</div><div class="s">${st.label}</div></div><div class="k">${p.kostnad}</div>`;
     d.onclick = () => select(p.id, true);
-    d.onmouseenter = () => setHighlight(p.id, true); d.onmouseleave = () => { if (active!==p.id) setHighlight(p.id, false); };
+    d.onmouseenter = () => setHighlight(p.id, true, true); d.onmouseleave = () => { if (active!==p.id) setHighlight(p.id, false); };
     listEl.appendChild(d);
   });
 }
 function row(dt, main, note){ return `<dt>${dt}</dt><dd><span class="big">${main||'–'}</span>${note?`<small>${note}</small>`:''}</dd>`; }
 function select(id, zoom){
   if (active && active!==id) setHighlight(active, false);
-  active = id; const p = PROJECTS.find(x=>x.id===id); setHighlight(id, true);
+  active = id; const p = PROJECTS.find(x=>x.id===id); setHighlight(id, true, true);
   if (zoom) map.fitBounds(layers[id].getBounds(), {padding:[40,40], maxZoom:13});
   const st = STATUS[p.status], k = KAT[p.kat];
   const geosrc = p.geo.map(g => window.GEO_SRC[g]).filter((v,i,a)=>v&&a.indexOf(v)===i).join(' · ');
