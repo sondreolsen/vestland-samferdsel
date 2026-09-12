@@ -330,7 +330,7 @@ PROJECTS.forEach(p => {
   });
   // Klikkflate legges øverst i gruppa
   p.geo.forEach(gk => { const g = window.PROJ_GEO[gk]; if (g && g.type !== 'MultiPolygon' && g.type !== 'Polygon') L.geoJSON(g, {style: HIT}).addTo(fg); });
-  fg.eachLayer(l => l.eachLayer ? l.eachLayer(x => { x.on('click', e => { L.DomEvent.stop(e); select(p.id, false); }); x.on('mouseover', () => { if (active!==p.id) setHighlight(p.id, true); }); x.on('mouseout', () => { if (active!==p.id) setHighlight(p.id, false); }); x.bindTooltip(p.navn, {sticky:true}); }) : null);
+  fg.eachLayer(l => l.eachLayer ? l.eachLayer(x => { x.on('mouseover', () => { if (active!==p.id) setHighlight(p.id, true); }); x.on('mouseout', () => { if (active!==p.id) setHighlight(p.id, false); }); x.bindTooltip(p.navn, {sticky:true}); }) : null);
   fg.addTo(map);
   layers[p.id] = fg;
 });
@@ -403,7 +403,29 @@ function select(id, zoom){
   renderList();
 }
 function closeDetail(){ if (active) setHighlight(active,false); active=null; detailEl.classList.remove('on'); listEl.style.display=''; filtEl.style.display=''; renderList(); }
-map.on('click', () => { /* klikk i tomt kart: behold valg */ });
+// Klikk i kartet: finn nærmeste synlige prosjektlinje innen tolPx piksler.
+// Uavhengig av hvilket SVG-element nettleseren mener ble truffet.
+function nearestProject(latlng, tolPx){
+  const p0 = map.latLngToLayerPoint(latlng); let best = null, bestD = Infinity;
+  PROJECTS.forEach(p => {
+    if (!map.hasLayer(layers[p.id])) return;
+    p.geo.forEach(gk => {
+      const g = window.PROJ_GEO[gk]; if (!g) return;
+      const lines = g.type==='MultiLineString' ? g.coordinates : g.type==='LineString' ? [g.coordinates] : g.type==='MultiPolygon' ? g.coordinates.flat() : g.type==='Polygon' ? g.coordinates : [];
+      lines.forEach(line => {
+        let a = map.latLngToLayerPoint([line[0][1], line[0][0]]);
+        for (let i = 1; i < line.length; i++) {
+          const b = map.latLngToLayerPoint([line[i][1], line[i][0]]);
+          const d = L.LineUtil.pointToSegmentDistance(p0, a, b);
+          if (d < bestD) { bestD = d; best = p; }
+          a = b;
+        }
+      });
+    });
+  });
+  return bestD <= tolPx ? best : null;
+}
+map.on('click', e => { const p = nearestProject(e.latlng, 22); if (p) select(p.id, false); });
 
 // Legend
 const legend = L.control({position:'bottomright'});
