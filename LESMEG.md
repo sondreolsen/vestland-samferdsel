@@ -21,7 +21,7 @@ Endepunkt: `https://services-eu1.arcgis.com/Omqj1DhF7kfdN8lE/ArcGIS/rest/service
 `https://services3.arcgis.com/NqGokVvI0NQ6O9Jf/arcgis/rest/services/E39B_BF_Anleggsbelte_Tiltaksomr_Alternativ1/FeatureServer/0`
 
 **OpenStreetMap (planlagte traséer tegnet av OSM-bidragsytere etter plankart):**
-Vossebanen Arna–Stanghelle (dobbeltspor), Bybanen til Åsane, Rv 5 Erdal–Naustdal, E39 Bogstunnelen–Gaular grense, E39 Byrkjelo–Grodås, Stad skipstunnel, nordre del av Rv 13 Vikafjellstunnelen, dagens E39 ved Gullkista.
+Vossebanen Arna–Stanghelle (dobbeltspor), Bybanen til Åsane, Rv 5 Erdal–Naustdal, E39 Bogstunnelen–Gaular grense, E39 Byrkjelo–Grodås, Stad skipstunnel, nordre del av Rv 13 Vikafjellstunnelen, dagens E39 ved Gullkista. Rv 13 Djupevik–Kviturtunnelen (anleggsstrekningen, highway=construction).
 
 **Skisser (omtrentlige, ingen vedtatt trasé):**
 E39 Ringveg øst Fjøsanger–Arna, Rv 15 Strynefjellet (KVU-konsept B1), tunnelen på Rv 13 Vikafjellet (Hola–Bøadalen).
@@ -56,3 +56,7 @@ perl assemble.pl template.html projects.js vestland_samferdselskart.html data.js
 ```
 
 Nettsiden https://sondreolsen.github.io/vestland-samferdsel/ oppdateres ett til to minutter etter push.
+
+## Nye Veier
+
+Rv 13 Djupevik–Kviturtunnelen er det eneste prosjektet i kartet som bygges av Nye Veier, ikke Statens vegvesen. Tall er hentet fra veiutbyggingsavtalen på regjeringen.no og fra Nye Veiers årsrapporter, som ligger i mappen `Nye Veier årsrapporter/`. Rapportene ble lest med `pdftotext`. Merk at figurene i rapportene oppgir arealbeslag i dekar, ikke kostnad.

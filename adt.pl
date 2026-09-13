@@ -7,7 +7,7 @@ my %REF = (
   hordfast=>'EV39', bokn=>'EV39', gullkista=>'EV39', arna=>'EV16', vagsbotn=>'EV39',
   fjosanger=>'EV39', bybanen=>'EV39', floyfjell=>'EV39', sotra=>'RV555', storehaugen=>'EV39',
   vikafjellet=>'RV13', erdal=>'RV5', bogstunnelen=>'EV39', roldal=>'EV134', hylland=>'EV16',
-  klakegg=>'EV39', strynefjellet=>'RV15', byrkjelo_grodas=>'EV39', stad=>undef,
+  klakegg=>'EV39', strynefjellet=>'RV15', byrkjelo_grodas=>'EV39', rv13_djupevik=>'RV13', stad=>undef,
 );
 # Hvilken geometri bbox skal regnes fra (utelat anleggsbelte o.l.)
 my %GEO = (
@@ -15,7 +15,7 @@ my %GEO = (
   vagsbotn=>['vagsbotn'], fjosanger=>['fjosanger_arna'], bybanen=>['bybanen'], floyfjell=>['floyfjell'],
   sotra=>['sotra'], storehaugen=>['storehaugen'], vikafjellet=>['vikafjellet'], erdal=>['erdal'],
   bogstunnelen=>['bogstunnelen'], roldal=>['roldal'], hylland=>['hylland'], klakegg=>['klakegg'],
-  strynefjellet=>['strynefjellet'], byrkjelo_grodas=>['byrkjelo_grodas'],
+  strynefjellet=>['strynefjellet'], byrkjelo_grodas=>['byrkjelo_grodas'], rv13_djupevik=>['rv13_djupevik'],
 );
 my $BUF = 0.02; # ca 1–2 km buffer rundt traséen
 

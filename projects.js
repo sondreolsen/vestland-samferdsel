@@ -109,6 +109,16 @@ const PROJECTS = [
   nytte:'Netto nåverdi −2,3 mrd kr', nytteNote:'2023-kr, åpning 2030 forutsatt (Vista Analyse 2023).',
   kilder:[['Vista Analyse: Vikafjellstunnelen (PDF)','https://www.regjeringen.no/contentassets/f517f097ff11468fbb8087f6bc981c43/nvas/vedlegg-vikafjellstunnelen.pdf'],['NRK: Vikafjellstunnelen framleis ute av NTP','https://www.nrk.no/vestland/vikafjellstunnelen-er-framleis-ute-av-ntp_-_-dei-drit-i-oss-1.16818248']]},
 
+ {id:'rv13_djupevik', geo:['rv13_djupevik'], kat:'veg', status:'bygging',
+  navn:'Rv 13 Djupevik–Kviturtunnelen (Nye Veier)', kommuner:'Ullensvang',
+  fase:'Under bygging. Veiutbyggingsavtale med Samferdselsdepartementet signert november 2023, Nye Veiers første avtale for en utbedringsstrekning. Risa AS fikk totalentreprisen høsten 2024, anleggsstart februar 2025 og ferdigstilling høsten 2026. Neste etappe, rv 13 Freim–Djupevik på 550–600 m, er lyst ut med anleggsperiode 2026–2027.',
+  kostnad:'408 mill kr', kostnadNote:'Forventet byggekostnad i veiutbyggingsavtalen, 2023-kr. Totalentreprisen til Risa AS er på ca 200 mill kr eks. mva. Oppdatert kostnadsanslag er ikke offentliggjort.',
+  stat:'Statlig', bom:'Ingen', finNote:'Finansiert over veiutbyggingsavtalen mellom Samferdselsdepartementet og Nye Veier. Ingen bompenger er vedtatt på strekningen. Nøyaktig statlig andel i prosent er ikke oppgitt.',
+  lengde:'1,2–1,5 km veg', lengdeNote:'Kontrakten omfatter 1,2 km ny veg i dagen, utvidet med 260 m til ca 1,5 km. Veiutbyggingsavtalen oppgir 1,3 km. Ny veg i skjering på fjellsiden, 7,5 m bred. Dagens veg blir gang- og sykkelveg mot Odda. To korte bruer, kulvert, natursteinsmurer og skredsikringsgjerder. Ingen ny tunnel. Strekningen går fra Djupevik nordover til sørportalen på Kviturtunnelen.',
+  reisetid:'Ingen gevinst beregnet', reisetidNote:'Formålet er trafikksikkerhet og færre stengninger ved steinsprang, ikke kortere reisetid. Raspunktet Byrkjeneset ligger midt på strekningen.',
+  nytte:'Ikke offentliggjort', nytteNote:'Nye Veier oppgir i årsrapporten for 2024 at utbedringsstrekningene på rv 13 og E136 ikke inngår i selskapets tabell over netto nytte per budsjettkrone. Ingen egen analyse er publisert.',
+  kilder:[['Nye Veier: Rv 13 Djupevik–Kviturtunnelen','https://www.nyeveier.no/strekninger/rv-13-skare-voss/rv-13-djupevik-kviturtunnelen/'],['Regjeringen: veiutbyggingsavtale signert','https://www.regjeringen.no/no/aktuelt/samferdselsdepartementet-har-signert-vegutbyggingsavtale-med-nye-veier-for-strekninga-rv.-13-djupevikkviturtunnelen/id3016424/'],['Nye Veier: Risa AS skal skredsikre og utbedre rv 13','https://www.nyeveier.no/nyheter/risa-as-skal-skredsikre-og-utbedre-rv-13-i-ullensvang/'],['Regjeringen: rv 13 Vinje–Sogndal tilbake til Statens vegvesen','https://www.regjeringen.no/no/aktuelt/statens-vegvesen-overtek-ansvaret-for-rv.-13-mellom-vinje-og-sogndal/id3084424/']]},
+
  {id:'erdal', geo:['erdal'], kat:'veg', status:'ntp2',
   navn:'Rv 5 Erdal–Naustdal', kommuner:'Sunnfjord, Kinn',
   fase:'Kommunedelplan vedtatt 2023, reguleringsplan under arbeid. Prioritert i andre periode av NTP 2025–2036 (2031–2036).',

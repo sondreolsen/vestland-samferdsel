@@ -208,7 +208,7 @@ const STATUS = {
 };
 const KAT = { veg:{label:'Veg',color:'#1f5fbf'}, bane:{label:'Jernbane',color:'#c0392b'}, bybane:{label:'Bybane',color:'#1e8e5a'}, sjo:{label:'Sjø',color:'#7b3fa0'} };
 // Numerisk kostnad (mrd kr) til nøkkeltall og sortering. null = ikke fastsatt.
-const KOST_MRD = {hordfast:53.7, bokn:21.3, gullkista:0.4, arna:41.2, vagsbotn:9.2, fjosanger:null, bybanen:18.2, floyfjell:3.4, sotra:23.1, storehaugen:4.6, vikafjellet:3.8, erdal:3.4, bogstunnelen:1.1, roldal:5.4, hylland:2.5, klakegg:null, strynefjellet:5.9, byrkjelo_grodas:11.4, stad:8.6};
+const KOST_MRD = {hordfast:53.7, bokn:21.3, gullkista:0.4, arna:41.2, vagsbotn:9.2, fjosanger:null, bybanen:18.2, floyfjell:3.4, sotra:23.1, storehaugen:4.6, vikafjellet:3.8, erdal:3.4, bogstunnelen:1.1, roldal:5.4, hylland:2.5, klakegg:null, strynefjellet:5.9, byrkjelo_grodas:11.4, stad:8.6, rv13_djupevik:0.408};
 // Én setning om hva prosjektet er
 const KORT = {
   hordfast:'Ferjefri E39 over Bjørnafjorden og Langenuen binder Sunnhordland og Bergensregionen sammen med bru og tunnel.',
@@ -230,6 +230,7 @@ const KORT = {
   strynefjellet:'Lang tunnel under Strynefjellet på rv 15, med arm mot Geiranger, erstatter tre gamle tunneler.',
   byrkjelo_grodas:'Ferjefri E39 gjennom Nordfjord med tunnel gjennom Utvikfjellet og hengebru over fjorden til Svarstad.',
   stad:'Verdens første skipstunnel gjennom Stadlandet gir trygg passasje forbi Stadhavet.',
+  rv13_djupevik:'Nye Veier skredsikrer og utbedrer rv 13 langs Sørfjorden mellom Odda og Tyssedal, med ny veg i skjering og dagens veg omgjort til gang- og sykkelveg.',
 };
 
 <!--PROJECTS-->
@@ -245,7 +246,7 @@ const ADT_REF = {
   hordfast:'EV39', bokn:'EV39', gullkista:'EV39', arna:'EV16', vagsbotn:'EV39', fjosanger:'EV39',
   bybanen:'EV39', floyfjell:'EV39', sotra:'RV555', storehaugen:'EV39', vikafjellet:'RV13',
   erdal:'RV5', bogstunnelen:'EV39', roldal:'EV134', hylland:'EV16', klakegg:'EV39',
-  strynefjellet:'RV15', byrkjelo_grodas:'EV39',
+  strynefjellet:'RV15', byrkjelo_grodas:'EV39', rv13_djupevik:'RV13',
 };
 // Hvilken geometri utsnittet regnes fra, når prosjektet har flere lag
 const ADT_GEO = {arna:['arna_veg'], bokn:['bokn'], fjosanger:['fjosanger_arna']};
@@ -298,7 +299,8 @@ async function hentAdt(id){
 function adtVerdi(id){ const a = adtCache[id] || (window.ADT_FALLBACK||{})[id]; return a && !a.na ? a.adt : null; }
 function adtHtml(id, a, kilde){
   if (!a || a.na) return `<div class="t">Trafikkmengde</div><div class="v">Ikke relevant<small>${id==='stad' ? 'Stad skipstunnel er et sjøtransportprosjekt uten årsdøgntrafikk.' : 'Ingen trafikktall funnet for strekningen.'}</small></div>`;
-  const d = [`Årsdøgntrafikk på dagens ${vegnavn(a.ref)} i korridoren, tall for ${a.ar}. Varierer mellom ${tall(a.min)} og ${tall(a.max)} langs ${tall(a.km)} km veg.`];
+  const d = [`Årsdøgntrafikk på dagens ${vegnavn(a.ref)} i korridoren, tall for ${a.ar}.`
+    + (a.min === a.max ? ` Målt over ${tall(a.km)} km veg.` : ` Varierer mellom ${tall(a.min)} og ${tall(a.max)} langs ${tall(a.km)} km veg.`)];
   if (a.lange != null) d.push(`Andel lange kjøretøy ${a.lange} %.`);
   if (ADT_NOTE[id]) d.push(ADT_NOTE[id]);
   d.push(kilde==='henter' ? 'Lagret verdi, henter oppdatert tall fra Statens vegvesen …'
@@ -325,7 +327,7 @@ const BASEMAPS = {
   graa:     {label:'Kartverket gråtone', layer:L.tileLayer('https://cache.kartverket.no/v1/wmts/1.0.0/topograatone/default/webmercator/{z}/{y}/{x}.png', {maxZoom:18, attribution:'© Kartverket'})},
   osm:      {label:'OpenStreetMap',      layer:L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom:19, attribution:'© OpenStreetMap-bidragsytere'})},
 };
-let baseKey = 'standard'; BASEMAPS[baseKey].layer.addTo(map);
+let baseKey = 'veg'; BASEMAPS[baseKey].layer.addTo(map);
 function setBase(k){ if (k===baseKey) return; map.removeLayer(BASEMAPS[baseKey].layer); baseKey=k; BASEMAPS[k].layer.addTo(map); renderBaseCtl(); }
 
 // Kartvalg + finn meg (egen kontroll øverst til høyre)
