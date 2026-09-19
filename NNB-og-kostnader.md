@@ -4,6 +4,8 @@ Sammenstilt 19. september 2026 for de 17 prosjektene på lista. Tallene er ikke 
 
 **Kort oppsummert:** 9 av 17 prosjekter har en publisert NNB. De øvrige har enten bare netto nytte i kroner, eller ingen samfunnsøkonomisk beregning offentliggjort i det hele tatt.
 
+**Periodeinndeling:** Blant Vestland-prosjektene i NTP-tabell 13.1 har bare E39 Storehaugen–Førde «ja» i kolonnen «Prioritert første seks år». Hylland–Slæn er et særtilfelle: NTP ber Statens vegvesen vurdere om det likevel er rom for oppstart i første periode. Fellesprosjektet Arna–Stanghelle har «ja» blant de store prosjektene utenfor porteføljen. Bybanen til Åsane og Fløyfjelltunnelen hører til byvekstavtalen uten periodeplassering.
+
 ## Hovedkilder
 
 | Kort navn | Dokument |

@@ -91,6 +91,7 @@
   .legend .row{display:flex;align-items:center;gap:8px}
   .legend i{display:inline-block;width:24px;height:0;border-top:4px solid #56657a}
   .legend i.d{border-top-style:dashed}
+  .legend i.m{border-top-style:dashed;border-top-width:3px}
   .legend i.o{border-top-style:dotted}
   .leaflet-tooltip{font:inherit;font-size:12.5px;font-weight:600;border-radius:8px;border:0;box-shadow:var(--shadow);padding:6px 10px}
 
@@ -199,12 +200,15 @@
 // ------------------------------------------------------------------
 // Prosjektfakta. Alle beløp i milliarder kroner (mrd) med prisår der det er kjent.
 // ------------------------------------------------------------------
+// Periodeinndelingen følger NTP 2025–2036 (Meld. St. 14 (2023–2024)) tabell 13.1,
+// der kolonnen «Prioritert første seks år» avgjør om et prosjekt hører til 2025–2030.
 const STATUS = {
-  bygging: {label:'Under bygging',              short:'Under bygging',  color:'#1e8e5a', dash:null},
-  ntp1:    {label:'Prioritert i NTP 2025–2036', short:'Prioritert NTP', color:'#0b4f8a', dash:null},
-  ntp2:    {label:'NTP, andre periode (2031–36)', short:'Andre periode', color:'#4a86c5', dash:'16,10'},
-  ikke:    {label:'Ikke prioritert / på vent',  short:'På vent',        color:'#8a98a8', dash:'9,9'},
-  skisse:  {label:'Tidlig planlegging (skisse)', short:'Skisse',        color:'#8a98a8', dash:'2,9'},
+  bygging: {label:'Under bygging',                              short:'Under bygging',   color:'#1e8e5a', dash:null},
+  ntp1:    {label:'NTP 2025–2036, første periode (2025–2030)',   short:'NTP 1. periode',  color:'#0b4f8a', dash:null},
+  ntp2:    {label:'NTP 2025–2036, andre periode (2031–2036)',    short:'NTP 2. periode',  color:'#4a86c5', dash:'16,10'},
+  byvekst: {label:'NTP 2025–2036, byvekstavtale (periode ikke fastsatt)', short:'Byvekstavtale', color:'#0e7c86', dash:'16,10'},
+  ikke:    {label:'Ikke prioritert i NTP 2025–2036',             short:'Ikke prioritert', color:'#8a98a8', dash:'9,9'},
+  skisse:  {label:'Tidlig planlegging (skisse)',                 short:'Skisse',          color:'#8a98a8', dash:'2,9'},
 };
 const KAT = { veg:{label:'Veg',color:'#1f5fbf'}, bane:{label:'Jernbane',color:'#c0392b'}, bybane:{label:'Bybane',color:'#1e8e5a'}, sjo:{label:'Sjø',color:'#7b3fa0'} };
 // Numerisk kostnad (mrd kr) til nøkkeltall og sortering. null = ikke fastsatt.
@@ -432,7 +436,7 @@ map.on('click', e => { const p = nearestProject(e.latlng, 22); if (p) select(p.i
 // Tegnforklaring for linjestil
 const legend = L.control({position:'bottomleft'});
 legend.onAdd = () => { const d = L.DomUtil.create('div','legend');
-  d.innerHTML = `<div class="row"><i></i>Under bygging / prioritert i NTP</div><div class="row"><i class="d"></i>Andre periode eller på vent</div><div class="row"><i class="o"></i>Skisse, trasé ikke valgt</div>`; return d; };
+  d.innerHTML = `<div class="row"><i></i>Under bygging eller NTP 1. periode</div><div class="row"><i class="d"></i>NTP 2. periode eller byvekstavtale</div><div class="row"><i class="m"></i>Ikke prioritert i NTP</div><div class="row"><i class="o"></i>Skisse, trasé ikke valgt</div>`; return d; };
 legend.addTo(map);
 
 // ------------------------------------------------------------------
