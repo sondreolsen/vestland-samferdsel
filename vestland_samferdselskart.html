@@ -755,10 +755,15 @@ document.getElementById('mbMap').onclick = () => setView('map');
 document.getElementById('mbList').onclick = () => setView('list');
 
 apply();
-new ResizeObserver(() => map.invalidateSize()).observe(document.getElementById('map'));
-// Kartet kan ha fått størrelse etter init (innbygging, treg layout): tilpass utsnittet på nytt
-function fitAll(){ map.invalidateSize(); if (!active) map.fitBounds(vest.getBounds(), {padding:[10,10]}); }
-requestAnimationFrame(fitAll); window.addEventListener('load', () => setTimeout(fitAll, 50));
+// Kartet kan få størrelse først etter init (innbygging, treg layout eller skjult fane).
+// Da blir startutsnittet feil, så vi tilpasser på nytt til brukeren selv tar over kartet.
+let brukerStyrer = false;
+const mapEl = document.getElementById('map');
+['mousedown','wheel','touchstart'].forEach(e => mapEl.addEventListener(e, () => { brukerStyrer = true; }, {passive:true}));
+function fitAll(){ map.invalidateSize(); if (!active && !brukerStyrer) map.fitBounds(vest.getBounds(), {padding:[10,10]}); }
+new ResizeObserver(fitAll).observe(mapEl);
+requestAnimationFrame(fitAll);
+window.addEventListener('load', () => setTimeout(fitAll, 50));
 </script>
 </body>
 </html>
